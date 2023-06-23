@@ -1,0 +1,26 @@
+<!--DEV
+@ @include('blocks/news-card/news-card.html', {
+  "img": "news-1",
+  "text": "ООРУ представив пропозиції щодо відновлення України на зустрічах із урядовими представниками Канади, США, Японії, Франції",
+  "date": "15.08.2023"
+})
+-->
+
+<artcile class="news-card">
+  <a href="#" class="embed-responsive embed-responsive--4-3  news-card__img" tabindex="-1">
+    <picture>
+      <source srcset="img/@@img.webp" type="image/webp">
+      <source srcset="img/@@img.jpg">
+
+      <img src="img/@@img.jpg" alt="Image descr" width="" height="" loading="lazy">
+    </picture>
+  </a>
+  <div class="news-card__text">
+    <h3 class="h5  news-card__title">
+      <a href="#" class="news-card__link">@@text</a>
+    </h3>
+    <p class="datetime">
+      <time datetime="2023-08-15">@@date</time>
+    </p>
+  </div>
+</artcile>

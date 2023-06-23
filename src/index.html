@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="uk" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <title>Home page</title>
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+<noscript>У вас вимкнено JavaScript. Приносимо наші вибачення, але це ускладнює використання цього сайту. / You have disabled JavaScript. We apologize, but this makes it difficult to use this site.</noscript>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+      @@include('blocks/top-banner/top-banner.html')
+
+      @@include('blocks/page-header/page-header.html')
+
+      <main class="main">
+        <h1 class="visually-hidden">Page title</h1>
+
+        <section class="container  index-news">
+
+          @@include('blocks/index-heading/index-heading.html', {
+            "tag": "h2",
+            "addClass": "index-heading--first",
+            "icon": "file-text",
+            "text": "Новини"
+          })
+
+          <div class="index-news__content">
+
+            <div class="index-news__big-card-1">
+              @@include('blocks/news-card-spec/news-card-spec.html', {
+                "img": "news-important-1",
+                "text": "ООРУ представив пропозиції щодо відновлення України на зустрічах із урядовими представниками Канади, США, Японії, Франції",
+                "date": "15.08.2023",
+                "badge": "Важливо"
+              })
+            </div>
+
+            <div class="index-news__card-1">
+              @@include('blocks/news-card/news-card.html', {
+                "img": "new-1",
+                "text": "Заступник голови ООРУ В.Костриця на сесії Міжнародної конференції праці в Женеві закликав МОП виключити рф з організації",
+                "date": "15.08.2023"
+              })
+            </div>
+
+            <div class="index-news__card-2">
+              @@include('blocks/news-card/news-card.html', {
+                "img": "new-2",
+                "text": "ООРУ представив пропозиції щодо відновлення України на зустрічах із урядовими представниками Канади, США, Японії, Франції",
+                "date": "15.08.2023"
+              })
+            </div>
+
+            <div class="index-news__card-3">
+              @@include('blocks/news-card/news-card.html', {
+                "img": "new-1",
+                "text": "Це податки і робочі місця: ООРУ вимагає адресної політики по відношенню до санкційних підприємств",
+                "date": "15.08.2023"
+              })
+            </div>
+
+            <div class="index-news__card-4">
+              @@include('blocks/news-card/news-card.html', {
+                "img": "new-2",
+                "text": "Гранти не вічні: уряд має запропонувати план відновлення самодостатності національної економіки",
+                "date": "15.08.2023"
+              })
+            </div>
+
+            <div class="index-news__big-card-2">
+              @@include('blocks/news-card-spec/news-card-spec.html', {
+                "img": "news-important-2",
+                "text": "Національна академія соціального страхування вітає п'ятдесят одного нового члена Академії",
+                "date": "15.08.2023",
+                "badge": ""
+              })
+            </div>
+
+          </div>
+
+          <div class="index-news__btn-wrapper">
+            <a href="#" class="btn">
+              <span>Усі новини</span>
+            </a>
+          </div>
+
+        </section>
+
+        <div class="index-events__wrapper">
+          <div class="row">
+
+            <div class="col-1-1-2"></div>
+
+            <div class="col-1-1-2"></div>
+
+          </div>
+        </div>
+
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('_include/page_bottom.html')
+
+</body>
+</html>
