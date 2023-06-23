@@ -1,0 +1,21 @@
+.index-heading {
+  display: flex;
+  align-items: center;
+  padding: 16px 0;
+  margin-top: 0;
+  margin-bottom: 40px;
+  color: $main-color;
+  border-top: 1px solid $main-color;
+  border-bottom: 1px solid $main-color;
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__text {
+    margin-left: 16px;
+  }
+
+  &--first {
+    padding-top: 24px;
+    border-top: none;
+  }
+}

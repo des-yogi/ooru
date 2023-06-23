@@ -1,0 +1,13 @@
+<!--DEV
+@ @include('blocks/index-heading/index-heading.html', {
+  "tag": "h1",
+  "addClass": "index-heading--first",
+  "icon": "file-text",
+  "text": "Новини",
+})
+-->
+
+<@@tag class="index-heading  @@addClass">
+  <svg width="40" height="40"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#@@icon"></use></svg>
+  <span  class="index-heading__text">@@text</span>
+</@@tag>

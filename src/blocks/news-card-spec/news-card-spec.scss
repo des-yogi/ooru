@@ -1,0 +1,85 @@
+.news-card-spec {
+  position: relative;
+  min-height: 200px;
+  background-color: gray;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: $border-radius;
+  overflow: hidden;
+
+  @media (max-width: $screen-md - 1) {
+    margin-left: -16px;
+    margin-right: -16px;
+  }
+
+  @media (min-width: $screen-md) {
+    aspect-ratio: 4 / 3;
+  }
+
+  $block-name:                &; // #{$block-name}__element
+
+  &::before {
+    display: block;
+    content: "";
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    height: 100%;
+    padding: 84px 16px 24px;
+    color: $white;
+
+    @media (min-width: $screen-md) {
+      padding: 84px 24px 24px;
+    }
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 24px;
+    color: inherit;
+
+    @media (max-width: $screen-md - 1) {
+      font-size: 24px;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    vertical-align: top;
+    color: inherit !important;
+  }
+
+  &__badge {
+    position: absolute;
+    top: 24px;
+    left: 16px;
+    padding: 12px;
+    font-size: $font-size-sm;
+    font-weight: 500;
+    line-height: 1;
+    text-transform: uppercase;
+    white-space: nowrap;
+    background-color: $color-danger;
+    border-radius: $border-radius;
+
+    @media (min-width: $screen-md) {
+      left: 24px;
+    }
+
+    &:empty {
+      display: none;
+    }
+  }
+}

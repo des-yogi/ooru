@@ -1,0 +1,117 @@
+.btn {
+
+  $block-name:                &; // #{$block-name}__element
+
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 56px;
+  padding: 0  $field-padding-horizontal;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: inherit;
+  line-height: $line-height;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  white-space: nowrap;
+  color: $link-color;
+  border-radius: $border-radius;
+  border: 1px solid $link-color;
+  background-color: $white;
+  background-image: none;
+  user-select: none;
+  cursor: pointer;
+  transition: all $transition-time;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: $link-color--hover;
+    background-color: #ebf0f9;
+    border-color: $link-color--hover;
+  }
+
+  &:active,
+  &:focus {
+    // @include field-focus;
+  }
+
+  &--disabled,
+  &:disabled {
+    // opacity: $opacity;
+    cursor: not-allowed;
+    color: $text-muted;
+    background-color: $white;
+    border-color: $gray-1;
+
+    @at-root a.btn--disabled {
+      pointer-events: none;
+    }
+  }
+
+  svg {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+
+    &:first-child {
+      margin-right: 16px;
+    }
+
+    &:last-child {
+      margin-left: 16px;
+    }
+  }
+
+  &--icon {
+    width: 56px;
+    height: 56px;
+    color: $title-color;
+    border-color: $white;
+
+    &:hover,
+    &:focus {
+      color: $link-color--hover;
+      background-color: $white;
+      border-color: $white;
+    }
+
+    &--disabled,
+    &:disabled {
+      color: $text-muted !important;
+      border-color: $white;
+
+      @at-root a.btn--icon--disabled {
+        pointer-events: none;
+      }
+    }
+  }
+
+
+  &--main {
+    color: #fff;
+    background-color: $color-main;
+    border: 1px solid $color-main;
+
+    &:hover,
+    &:focus {
+      color: #fff;
+      background-color: $link-color--hover;
+      border-color: $link-color--hover;
+    }
+
+    &--disabled,
+    &:disabled {
+      color: $text-muted;
+      background-color: $border-color;
+      border-color: $border-color;
+
+      @at-root a.btn--main--disabled {
+        pointer-events: none;
+      }
+    }
+  }
+}
