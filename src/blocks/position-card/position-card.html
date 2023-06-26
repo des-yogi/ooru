@@ -1,14 +1,23 @@
 <!--DEV
-
-Для использования этого файла как шаблона:
-
-@ @include('blocks/position-card/position-card.html')
-
-(Нужно убрать пробел между символами @)
-Подробнее: https://www.npmjs.com/package/gulp-file-include
-
-
-
-<div class="position-card">content</div>
-
+@ @include('blocks/position-card/position-card.html', {
+  "addClass": "",
+  "icon": "target",
+  "parent": "Позиція",
+  "title": "Металургія потребує протекціонізму з боку держави, у тому числі в забезпеченні брухтом"
+})
 -->
+
+<article class="position-card  @@addClass">
+  <div class="position-card__parent">
+    <svg class="position-card__parent-icon" aria-hidden="true" width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#@@icon"></use></svg>
+    <h2 class="position-card__parent-title">@@parent</h2>
+  </div>
+  <div class="position-card__text">
+    <h3 class="display-card  position-card__title">
+      <a href="#" class="position-card__link">@@title</a>
+    </h3>
+    <span class="datetime">
+      <time datetime="2023-02-24">24 Лютого 2023</time>
+    </span>
+  </div>
+</article>

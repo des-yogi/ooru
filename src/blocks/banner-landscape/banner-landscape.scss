@@ -1,9 +1,43 @@
-// В этом файле должны быть стили для БЭМ-блока banner-landscape, его элементов, 
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .banner-landscape {
+  display: flex;
+  min-height: 150px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background-color: $main-color;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media (max-width: $screen-md - 1) {
+    margin-left: -16px;
+    margin-right: -16px;
+  }
+
+  @media (min-width: $screen-md) {
+    min-height: 235px;
+    border-radius: $border-radius;
+  }
+
+  @media (min-width: $screen-xl) {
+    min-height: 392px;
+    margin-top: 48px;
+    margin-bottom: 48px;
+  }
 
   $block-name:                &; // #{$block-name}__element
 
+  &__text {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    padding: 24px;
+    text-decoration: none !important;
+
+    & > .h2 {
+      margin: 0;
+      color: $white;
+    }
+  }
 }

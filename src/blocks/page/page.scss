@@ -327,9 +327,76 @@ a {
   font-weight: 500;
 }
 
+// Swiper controls
+.slider-controls {
+  display: inline-flex;
+  align-items: center;
+  //justify-content: space-between;
+
+  & > * {
+    position: static;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    flex: 0 0 56px;
+    width: 56px;
+    height: 56px;
+    padding: 0;
+    color: $link-color;
+    border: 1px solid $link-color;
+    border-radius: $border-radius;
+
+    &::after {
+      font-size: 14px;
+      font-weight: 900;
+      color: currentColor;
+    }
+
+    &:hover,
+    &:focus {
+      color: $link-color--hover;
+      background-color: #ebf0f9;
+      border-color: $link-color--hover;
+    }
+  }
+
+  .swiper-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 24px;
+  }
+
+  .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    margin: 0 8px !important;
+    border-radius: 1px;
+    background-color: rgba($link-color, 0.5);
+  }
+
+  .swiper-pagination-bullet-active {
+    width: 12px;
+    height: 12px;
+    background-color: rgba($link-color, 1);
+  }
+}
+
 .col-1-1-2 {
   @include col(xs, 12);
   @include col(xl, 6);
+}
+
+.col-1-2-4 {
+  @include col(xs, 12);
+  @include col(md, 6);
+  @include col(xl, 3);
+}
+
+.col-1-2-2 {
+  @include col(xs, 12);
+  @include col(md, 6);
 }
 
 //@include col(xs, 12);
