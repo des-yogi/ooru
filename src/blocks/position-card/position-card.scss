@@ -1,9 +1,76 @@
-// В этом файле должны быть стили для БЭМ-блока position-card, его элементов, 
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .position-card {
+  display: flex;
+  min-height: 280px;
+  padding: 24px;
+  flex-direction: column;
+  justify-content: space-between;
+  color: $white !important;
+  border-radius: 2px;
+  background:
+    url(../img/card-bg-right.png),
+    linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.5) 100%),
+    $main-color;
+  background-repeat-x: no-repeat;
+  background-position: right -135px top, center bottom;
+
 
   $block-name:                &; // #{$block-name}__element
 
+  @media (max-width: $screen-xl - 1) {
+    margin-top: 24px;
+  }
+
+  @media (min-width: $screen-md) {
+    aspect-ratio: 4 / 3;
+    background-position: right top, center bottom;
+  }
+
+  & + & {
+
+    @media (min-width: $screen-xl) {
+      margin-top: 24px;
+    }
+  }
+
+  &__parent {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+
+  &__parent-icon {
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+
+    @media (min-width: $screen-md) {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  &__parent-title {
+    margin: 0;
+    text-transform: uppercase;
+    color: inherit;
+  }
+
+  &__text {
+
+  }
+
+  &__title {
+    margin-top: 0;
+    color: inherit;
+  }
+
+  &__link {
+
+    &:hover,
+    &:focus {
+      color: inherit;
+      text-decoration: underline;
+    }
+  }
 }

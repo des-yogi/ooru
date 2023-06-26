@@ -77,6 +77,18 @@ h6 {
   font-family: $font-family;
   line-height: 1.3;
   color: $title-color;
+
+  & > a {
+    display: inline-block;
+    vertical-align: baseline;
+    color: inherit;
+
+    &:hover,
+    &:focus {
+      color: $link-color--hover;
+      text-decoration: none;
+    }
+  }
 }
 
 .h1,
@@ -103,45 +115,80 @@ h6 {
   margin-bottom: 8px;
 }
 
-.h1,
 h1 {
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 23px;
+}
+
+h3 {
+  font-size: 19px;
+}
+
+h4,
+h5,
+h6 {
+  font-size: 16px;
+}
+
+h1,
+h2 {
+  font-weight: 800;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+.h1 {
   font-size: $font-size--h1;
   font-weight: 800;
 
   @media (max-width: $screen-md - 1) {
     font-size: $font-size--h1 * 0.85;
-    font-weight: 700;
   }
 }
 
-.h2,
-h2 {
+.h2 {
   font-size: $font-size--h2;
   font-weight: 800;
 }
 
-.h3,
-h3 {
+.h3 {
   font-size: $font-size--h3;
   font-weight: 600;
 }
 
-.h4,
-h4 {
+.h4 {
   font-size: $font-size--h4;
   font-weight: 800;
 }
 
-.h5,
-h5 {
+.h5 {
   font-size: $font-size--h5;
   font-weight: 600;
 }
 
-.h6,
-h6 {
+.h6 {
   font-size: $font-size--h6;
   font-weight: 600;
+}
+
+.display-card {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1.3;
+  color: $title-color;
+
+  @media (min-width: $screen-md) {
+    font-size: 28px;
+    font-weight: 600;
+  }
 }
 
 .p,

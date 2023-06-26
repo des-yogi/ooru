@@ -91,16 +91,273 @@
 
         </section>
 
-        <div class="index-events__wrapper">
+        <div class="container  index-events">
           <div class="row">
 
-            <div class="col-1-1-2"></div>
+            <div class="col-1-1-2">
+              <section class="events-slider">
+                @@include('blocks/index-heading/index-heading.html', {
+                  "tag": "h2",
+                  "addClass": "",
+                  "icon": "calendar",
+                  "text": "Анонси подій"
+                })
 
-            <div class="col-1-1-2"></div>
+                <div class="swiper  events-slider__container">
+
+                  <div class="swiper-wrapper">
+
+                    <article class="swiper-slide  events-slider__slide">
+                      <a href="#" class="embed-responsive embed-responsive--4-3 events-slider__slide__img" title="Title" tabindex="-1">
+                        <picture>
+                          <source srcset="img/slide-1.webp" media="(min-width: 1280px)" type="image/webp">
+                          <source srcset="img/slide-1.jpg" media="(min-width: 1280px)">
+                            <!-- 588x441 -->
+                          <source srcset="img/slide-1.webp" media="(min-width: 1024px)" type="image/webp">
+                          <source srcset="img/slide-1.jpg" media="(min-width: 1024px)">
+                            <!-- 1200x900 -->
+                          <source srcset="img/slide-1.webp" media="(min-width: 768px)" type="image/webp">
+                          <source srcset="img/slide-1.jpg" media="(min-width: 768px)">
+                            <!-- 976x732 -->
+                          <source srcset="img/slide-1.webp" media="(min-width: 360px)" type="image/webp">
+                          <source srcset="img/slide-1.jpg" media="(min-width: 360px)">
+                            <!-- 720x540 -->
+                          <img src="img/slide-1.jpg" alt="Slide descr" width="1200" height="900" loading="lazy">
+                        </picture>
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                      </a>
+                      <div class="events-slider__slide-text">
+                        <h3 class="h4  events-slider__slide-title">
+                          <a href="#">Українські роботодавці закликали МОП виключити росію із членів організації</a>
+                        </h3>
+                        <p class="events-slider__datetime-wrapper">
+                          <span class="datetime">
+                            <time datetime="2023-02-24 14:00">24 Лютого 2023</time>
+                          </span>
+                          <span class="events-slider__time">Початок - 14:00</span>
+                        </p>
+                      </div>
+                    </article>
+
+                    <article class="swiper-slide  events-slider__slide">
+                      <a href="#" class="embed-responsive embed-responsive--4-3 events-slider__slide__img" title="Title" tabindex="-1">
+                        <picture>
+                          <source srcset="img/slide-1.webp" media="(min-width: 1280px)" type="image/webp">
+                          <source srcset="img/slide-1.jpg" media="(min-width: 1280px)">
+                            <!-- 588x441 -->
+                          <source srcset="img/slide-1.webp" media="(min-width: 1024px)" type="image/webp">
+                          <source srcset="img/slide-1.jpg" media="(min-width: 1024px)">
+                            <!-- 1200x900 -->
+                          <source srcset="img/slide-1.webp" media="(min-width: 768px)" type="image/webp">
+                          <source srcset="img/slide-1.jpg" media="(min-width: 768px)">
+                            <!-- 976x732 -->
+                          <source srcset="img/slide-1.webp" media="(min-width: 360px)" type="image/webp">
+                          <source srcset="img/slide-1.jpg" media="(min-width: 360px)">
+                            <!-- 720x540 -->
+                          <img src="img/slide-1.jpg" alt="Slide descr" width="1200" height="900" loading="lazy">
+                        </picture>
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                      </a>
+                      <div class="events-slider__slide-text">
+                        <h3 class="h4  events-slider__slide-title">
+                          <a href="#">Українські роботодавці закликали МОП виключити росію із членів організації</a>
+                        </h3>
+                        <p class="events-slider__datetime-wrapper">
+                          <span class="datetime">
+                            <time datetime="2023-02-24 14:00">24 Лютого 2023</time>
+                          </span>
+                          <span class="events-slider__time">Початок - 14:00</span>
+                        </p>
+                      </div>
+                    </article>
+
+                    <article class="swiper-slide  events-slider__slide">
+                      <a href="#" class="embed-responsive embed-responsive--4-3 events-slider__slide__img" title="Title" tabindex="-1">
+                        <picture>
+                          <source srcset="img/slide-1.webp" media="(min-width: 1280px)" type="image/webp">
+                          <source srcset="img/slide-1.jpg" media="(min-width: 1280px)">
+                            <!-- 588x441 -->
+                          <source srcset="img/slide-1.webp" media="(min-width: 1024px)" type="image/webp">
+                          <source srcset="img/slide-1.jpg" media="(min-width: 1024px)">
+                            <!-- 1200x900 -->
+                          <source srcset="img/slide-1.webp" media="(min-width: 768px)" type="image/webp">
+                          <source srcset="img/slide-1.jpg" media="(min-width: 768px)">
+                            <!-- 976x732 -->
+                          <source srcset="img/slide-1.webp" media="(min-width: 360px)" type="image/webp">
+                          <source srcset="img/slide-1.jpg" media="(min-width: 360px)">
+                            <!-- 720x540 -->
+                          <img src="img/slide-1.jpg" alt="Slide descr" width="1200" height="900" loading="lazy">
+                        </picture>
+                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                      </a>
+                      <div class="events-slider__slide-text">
+                        <h3 class="h4  events-slider__slide-title">
+                          <a href="#">Українські роботодавці закликали МОП виключити росію із членів організації</a>
+                        </h3>
+                        <p class="events-slider__datetime-wrapper">
+                          <span class="datetime">
+                            <time datetime="2023-02-24 14:00">24 Лютого 2023</time>
+                          </span>
+                          <span class="events-slider__time">Початок - 14:00</span>
+                        </p>
+                      </div>
+                    </article>
+
+                  </div>
+
+                </div>
+
+                <div class="events-slider__control-wrapper">
+                  <div class="slider-controls">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                  </div>
+                  <a href="#" class="btn"><span>Усі анонси</span></a>
+                </div>
+
+              </section>
+            </div>
+
+            <div class="col-1-1-2">
+
+              @@include('blocks/position-card/position-card.html', {
+                "addClass": "",
+                "icon": "target",
+                "parent": "Позиція",
+                "title": "Металургія потребує протекціонізму з боку держави, у тому числі в забезпеченні брухтом"
+              })
+
+              @@include('blocks/position-card/position-card.html', {
+                "addClass": "poll-card",
+                "icon": "annotation",
+                "parent": "Опитування",
+                "title": "Україна має зайняти проактивну роль у формуванні реєстру збитків від агресії рф та отриманні подальших компенсацій"
+              })
+
+            </div>
 
           </div>
         </div>
 
+        @@include('blocks/banner-landscape/banner-landscape.html', {
+          "img": "banner-hor-bg"
+        })
+
+        <section class="container  project-block__wrapper">
+          @@include('blocks/index-heading/index-heading.html', {
+            "tag": "h2",
+            "addClass": "",
+            "icon": "folder-open",
+            "text": "Проєкти ООРУ"
+          })
+
+          @@include('blocks/project-block/project-block.html', {
+            "img": "project-cap-1",
+            "status": "Проєкт закінчено",
+            "title": "Будівництво складського комплексу",
+            "text": "Будівництво складського комплексу. <br>Мета — об'єкт призначений для надання логістичних послуг навколишнього середовища та спеціальних зон для доставки операцій фулфілменту та крос-докінгу."
+          })
+
+          @@include('blocks/project-block/project-block.html', {
+            "img": "project-cap-2",
+            "status": "Проєкт закінчено",
+            "title": "Стійкість бізнесу під час війни",
+            "text": "ООРУ співпрацює із Міжнародною організацією праці в рамках її інтелектуального продукту – навчальної програми SURE (стале та стійке підприємництво). Впродовж грудня 2022 – червня 2023 року будуть проведені різноманітні тренінги, майстер-класи, навчальні програми."
+          })
+
+          @@include('blocks/project-block/project-block.html', {
+            "img": "project-cap-1",
+            "status": "Проєкт закінчено",
+            "title": "Виробництво біопалива",
+            "text": "Сприятливі природні умови для вирощування ріпаку на території Кодимської міської територіальної громади створюють інвестиційні можливості для розвитку діяльності з виробництва біодизеля. Сприятливі природні умови для вирощування ріпаку на території Кодимської міської територіальної громади створюють інвестиційні можливості для розвитку діяльності з виробництва біодизеля."
+          })
+        </section>
+
+        <section class="container  index-gallery">
+          @@include('blocks/index-heading/index-heading.html', {
+            "tag": "h2",
+            "addClass": "",
+            "icon": "image",
+            "text": "Галерея"
+          })
+
+          <div class="row">
+
+            <div class="col-1-2-4">
+              @@include('blocks/news-card/news-card.html', {
+                "img": "new-1",
+                "text": "Заступник голови ООРУ В.Костриця на сесії Міжнародної конференції праці в Женеві закликав МОП виключити рф з організації",
+                "date": "15.08.2023"
+              })
+            </div>
+
+            <div class="col-1-2-4">
+              @@include('blocks/news-card/news-card.html', {
+                "img": "new-2",
+                "text": "Заступник голови ООРУ В.Костриця на сесії",
+                "date": "15.08.2023"
+              })
+            </div>
+
+            <div class="col-1-2-4">
+              @@include('blocks/news-card/news-card.html', {
+                "img": "new-1",
+                "text": "Заступник голови ООРУ В.Костриця на сесії Міжнародної конференції праці в Женеві закликав МОП виключити рф з організації",
+                "date": "15.08.2023"
+              })
+            </div>
+
+            <div class="col-1-2-4">
+              @@include('blocks/news-card/news-card.html', {
+                "img": "new-2",
+                "text": "Заступник голови ООРУ В.Костриця",
+                "date": "15.08.2023"
+              })
+            </div>
+
+          </div>
+
+        </section>
+
+        <section class="container  index-video">
+          @@include('blocks/index-heading/index-heading.html', {
+            "tag": "h2",
+            "addClass": "",
+            "icon": "video-on",
+            "text": "Відео"
+          })
+
+          <div class="row">
+
+            <div class="col-1-2-2  index-video__col">
+              <div class="embed-responsive">
+                <iframe class="b-lazy" title="Семінар «Впровадження енергоефективних технологій компаніями для підвищення конкурентоспроможності»" data-src="https://www.youtube.com/embed/kbKBC53fzRk" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen width="328" height="184"></iframe>
+              </div>
+            </div>
+
+            <div class="col-1-2-2  index-video__col">
+              <div class="embed-responsive">
+                <iframe class="b-lazy" title="Семінар «Впровадження енергоефективних технологій компаніями для підвищення конкурентоспроможності»" data-src="https://www.youtube.com/embed/sNov7iXDDHs" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen width="328" height="184"></iframe>
+              </div>
+            </div>
+
+          </div>
+
+        </section>
+
+        <aside class="container  partners">
+          <h3 class="h3">Партнери ООРУ</h3>
+
+          <div class="partners__container">
+            Слайдер
+          </div>
+
+        </aside>
+
+        @@include('blocks/banner-landscape/banner-landscape.html', {
+          "img": "banner-hor-bg"
+        })
 
       </main>
 

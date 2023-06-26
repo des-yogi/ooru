@@ -1,14 +1,48 @@
 <!--DEV
-
-Для использования этого файла как шаблона:
-
-@ @include('blocks/project-block/project-block.html')
-
-(Нужно убрать пробел между символами @)
-Подробнее: https://www.npmjs.com/package/gulp-file-include
-
-
-
-<div class="project-block">content</div>
-
+@ @include('blocks/project-block/project-block.html', {
+  "img": "",
+  "status": "Проєкт закінчено",
+  "title": "Будівництво складського комплексу",
+  "text": "Будівництво складського комплексу. <br>Мета — об'єкт призначений для надання логістичних послуг навколишнього середовища та спеціальних зон для доставки операцій фулфілменту та крос-докінгу."
+})
 -->
+
+<article class="project-block">
+  <div class="project-block__logo">
+    <a href="#" class="project-block__logo-link" title="Title 1" target="_blank" rel="nofollow noopener">
+      <img src="img/logo-01.png" width="72" height="72" alt="Лого 1" loading="lazy">
+    </a>
+    <a href="#" class="project-block__logo-link" title="Title 2" target="_blank" rel="nofollow noopener">
+      <img src="img/logo-02.png" width="168" height="72" alt="Лого 2" loading="lazy">
+    </a>
+  </div>
+
+  <div class="project-block__img">
+    <picture>
+      <source srcset="img/@@img.webp" media="(min-width: 1024px)" type="image/webp">
+      <source srcset="img/@@img.jpg" media="(min-width: 1024px)">
+        <!-- 1200x400 -->
+      <source srcset="img/@@img.webp" media="(min-width: 768px)" type="image/webp">
+      <source srcset="img/@@img.jpg" media="(min-width: 768px)">
+        <!-- 976x325 -->
+      <source srcset="img/@@img.webp" media="(min-width: 360px)" type="image/webp">
+      <source srcset="img/@@img.jpg" media="(min-width: 360px)">
+        <!-- 720x240 -->
+      <img src="img/@@img.jpg" width="1200" height="400" alt="Alt text" loading="lazy">
+    </picture>
+  </div>
+
+  <div class="project-block__text">
+
+    <div class="project-block__title-col">
+      <p class="project-block__status">@@status</p>
+      <h3 class="h3  project-block__title">
+        <a href="#" class="project-block__link">@@title</a>
+      </h3>
+    </div>
+
+    <div class="project-block__descr-col">
+      @@text
+    </div>
+  </div>
+</article>

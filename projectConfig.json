@@ -39,7 +39,8 @@
     "telegram-block": [],
     "social-links": [],
     "copyrights": [],
-    "news-card-spec": []
+    "news-card-spec": [],
+    "events-slider": []
   },
   "addCssBefore": [
     "../../node_modules/bootstrap/scss/_functions",
