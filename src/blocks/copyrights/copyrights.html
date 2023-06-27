@@ -1,14 +1,20 @@
 <!--DEV
-
-Для использования этого файла как шаблона:
-
 @ @include('blocks/copyrights/copyrights.html')
-
-(Нужно убрать пробел между символами @)
-Подробнее: https://www.npmjs.com/package/gulp-file-include
-
-
-
-<div class="copyrights">content</div>
-
 -->
+
+<section class="copyrights">
+  <h2 class="visually-hidden">Додаткова інформація для відвідувачів сайту</h2>
+
+  <div class="copyrights__inner">
+    <p class="copyrights__owner">
+      <span>© 2001-2023 Об'єднання організацій роботодавців України</span>
+      <a href="#" class="copyrights__link">Умови та положення</a>
+      <a href="#" class="copyrights__link">Згода на ОПД</a>
+    </p>
+    <div class="copyrights__dev">
+      <a href="#" class="copyrights__dev-logo" title="IT-Doors Outsourcing">
+        <img src="img/itdoors-logo.svg" width="70" height="26" alt="IT-Doors Outsourcing logo" loading="lazy">
+      </a>
+    </div>
+  </div>
+</section>

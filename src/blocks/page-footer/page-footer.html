@@ -1,11 +1,92 @@
 <!--DEV
-
-Нужно убрать пробел между @-ами:
-
 @ @include('blocks/page-footer/page-footer.html')
-
 -->
 
-<footer class="page-footer">
-  page-footer
+<footer class="container  page-footer">
+  <div class="row">
+
+    <div class="page-footer__col-logo">
+      <a href="index.html" class="logo  logo--footer" title="ООРУ">
+        <img src="img/OORU-logo-footer.svg" width="204" height="167" alt="ООРУ logo" loading="lazy">
+      </a>
+    </div>
+
+    <section class="page-footer__col-nav">
+      <h2 class="visually-hidden">Додаткова навігація по сайту</h2>
+
+      <div class="row">
+
+        <div class="page-footer__col-nav-inner">
+          <h3 class="h5  page-footer__nav-title">Про нас</h3>
+
+          <ul class="list-nostyled  page-footer__nav-list">
+            <li class="page-footer__nav-item">
+              <a href="#" class="page-footer__nav-link">Про об'єднання</a>
+            </li>
+            <li class="page-footer__nav-item">
+              <a href="#" class="page-footer__nav-link">Хто входить в ООРУ</a>
+            </li>
+            <li class="page-footer__nav-item">
+              <a href="#" class="page-footer__nav-link">Лідери</a>
+            </li>
+          </ul>
+
+        </div>
+
+        <div class="page-footer__col-nav-inner">
+          <h3 class="h5  page-footer__nav-title">Медіа</h3>
+
+          <ul class="list-nostyled  page-footer__nav-list">
+            <li class="page-footer__nav-item">
+              <a href="#" class="page-footer__nav-link">НОВИНИ</a>
+            </li>
+            <li class="page-footer__nav-item">
+              <a href="#" class="page-footer__nav-link">ВІДЕО</a>
+            </li>
+            <li class="page-footer__nav-item">
+              <a href="#" class="page-footer__nav-link">ФОТОГАЛЕРЕЯ</a>
+            </li>
+            <li class="page-footer__nav-item">
+              <a href="#" class="page-footer__nav-link">ПОЗИЦІЯ</a>
+            </li>
+            <li class="page-footer__nav-item">
+              <a href="#" class="page-footer__nav-link">ПОДІЇ</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="page-footer__col-nav-inner">
+          <h3 class="h5  page-footer__nav-title">Меню</h3>
+
+          <ul class="list-nostyled  page-footer__nav-list">
+            <li class="page-footer__nav-item">
+              <a href="#" class="page-footer__nav-link">ОПИТУВАННЯ</a>
+            </li>
+            <li class="page-footer__nav-item">
+              <a href="#" class="page-footer__nav-link">ПРОЄКТИ</a>
+            </li>
+            <li class="page-footer__nav-item">
+              <a href="#" class="page-footer__nav-link">СОЦІАЛЬНИЙ ДІАЛОГ</a>
+            </li>
+            <li class="page-footer__nav-item">
+              <a href="#" class="page-footer__nav-link">КОНТАКТИ</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+
+  <div class="page-footer__bottom">
+    <a href="#" class="btn" style="text-transform:uppercase;">
+      <span>Членство в ООРУ</span>
+    </a>
+    @@include('../../blocks/social-links/social-links.html', {
+      "addClass": "social-links--footer",
+    })
+  </div>
+
+  @@include('../../blocks/copyrights/copyrights.html')
 </footer>

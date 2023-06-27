@@ -98,7 +98,7 @@ $field-padding-horizontal:    24px;
 $border-radius:               2px;
 $opacity:                     0.7;
 $shadow:                      0 4px 2px -2px rgba(0, 0, 0, 0.3);
-$transition-time:             0.25s;
+$transition-time:             0.2s;
 
 // BS4 vars for mixins
 $enable-transitions:                          true !default;
@@ -108,6 +108,6 @@ $transition-fade:                             opacity .15s linear !default;
 $transition-collapse:                         height .2s ease !default;
 
 $menu-desktop-width:          $screen-xl;
-$toggler-part-height:         3px;
-$toggler-part-bg-color:       #000;
+$toggler-part-height:         2px;
+$toggler-part-bg-color:       $title-color;
 

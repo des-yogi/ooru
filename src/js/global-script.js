@@ -58,6 +58,16 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
   });
 }());
 
+(function () {
+  // Burger class toggle
+  const burger = document.getElementById('burger');
+  if (!burger) return;
+  const burgerToggleHandler = function() {
+    burger.classList.toggle('burger--close');
+  };
+  burger.addEventListener('click', burgerToggleHandler);
+})();
+
 // (function(){
 //   // code
 // }());
