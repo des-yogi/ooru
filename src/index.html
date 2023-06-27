@@ -8,6 +8,9 @@
 </head>
 
 <body>
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/uk_UA/sdk.js#xfbml=1&version=v17.0" nonce="IqeeQBxi"></script>
+
 <noscript>У вас вимкнено JavaScript. Приносимо наші вибачення, але це ускладнює використання цього сайту. / You have disabled JavaScript. We apologize, but this makes it difficult to use this site.</noscript>
 
   <div class="page__inner">
@@ -346,11 +349,87 @@
 
         </section>
 
-        <aside class="container  partners">
-          <h3 class="h3">Партнери ООРУ</h3>
+        <aside class="partners">
+          <div class="container">
+            <h3 class="h3  partners__title">Партнери ООРУ</h3>
+          </div>
 
-          <div class="partners__container">
-            Слайдер
+          <div class="swiper  partners__container  container">
+            <div class="swiper-wrapper" role="list">
+
+              <div class="swiper-slide  partners__item" role="listitem">
+                <a href="#" class="partners__logo" title="Partner's Name">
+                  <!-- w-212 max, h-72 -->
+                  <img src="img/logo-01.png" alt="Img Descr" height="72" loading="lazy">
+                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                </a>
+                <p class="partners__descr">Об'єднання підприємств - це добровільне об'єднання юридичних осіб, яке вони створили з метою координації діяльності.</p>
+              </div>
+
+              <div class="swiper-slide  partners__item" role="listitem">
+                <span class="partners__logo" title="Partner's Name">
+                  <!-- w-212 max, h-72 -->
+                  <img src="img/logo-02.png" alt="Img Descr" height="72" loading="lazy">
+                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                </span>
+                <p class="partners__descr">Об'єднання підприємств - це добровільне об'єднання</p>
+              </div>
+
+              <div class="swiper-slide  partners__item" role="listitem">
+                <a href="#" class="partners__logo" title="Partner's Name">
+                  <!-- w-212 max, h-72 -->
+                  <img src="img/logo-01.png" alt="Img Descr" height="72" loading="lazy">
+                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                </a>
+                <p class="partners__descr">Об'єднання підприємств - це добровільне об'єднання юридичних осіб, яке вони створили.</p>
+              </div>
+
+              <div class="swiper-slide  partners__item" role="listitem">
+                <a href="#" class="partners__logo" title="Partner's Name">
+                  <!-- w-212 max, h-72 -->
+                  <img src="img/logo-02.png" alt="Img Descr" height="72" loading="lazy">
+                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                </a>
+                <p class="partners__descr">Об'єднання підприємств.</p>
+              </div>
+
+              <div class="swiper-slide  partners__item" role="listitem">
+                <a href="#" class="partners__logo" title="Partner's Name">
+                  <!-- w-212 max, h-72 -->
+                  <img src="img/logo-01.png" alt="Img Descr" height="72" loading="lazy">
+                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                </a>
+                <p class="partners__descr">Об'єднання підприємств - це добровільне об'єднання юридичних осіб, яке вони створили з метою координації діяльності.</p>
+              </div>
+
+              <div class="swiper-slide  partners__item" role="listitem">
+                <a href="#" class="partners__logo" title="Partner's Name">
+                  <!-- w-212 max, h-72 -->
+                  <img src="img/logo-02.png" alt="Img Descr" height="72" loading="lazy">
+                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                </a>
+                <p class="partners__descr">Об'єднання підприємств - це добровільне об'єднання юридичних осіб, яке вони створили з метою координації діяльності.</p>
+              </div>
+
+              <div class="swiper-slide  partners__item" role="listitem">
+                <a href="#" class="partners__logo" title="Partner's Name">
+                  <!-- w-212 max, h-72 -->
+                  <img src="img/logo-01.png" alt="Img Descr" height="72" loading="lazy">
+                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                </a>
+                <p class="partners__descr">Об'єднання підприємств - це добровільне об'єднання юридичних осіб, яке вони створили з метою координації діяльності.</p>
+              </div>
+
+              <div class="swiper-slide  partners__item" role="listitem">
+                <a href="#" class="partners__logo" title="Partner's Name">
+                  <!-- w-212 max, h-72 -->
+                  <img src="img/logo-02.png" alt="Img Descr" height="72" loading="lazy">
+                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                </a>
+                <p class="partners__descr">Об'єднання підприємств - це добровільне об'єднання юридичних осіб, яке вони створили з метою координації діяльності.</p>
+              </div>
+
+            </div>
           </div>
 
         </aside>
@@ -358,6 +437,22 @@
         @@include('blocks/banner-landscape/banner-landscape.html', {
           "img": "banner-hor-bg"
         })
+
+        <div class="container  telegram-block__wrapper">
+          <div class="row">
+
+            <div class="telegram-block__col-left">
+              @@include('blocks/telegram-block/telegram-block.html')
+            </div >
+
+            <div class="telegram-block__col-right">
+              <div class="fb-block" style="overflow:hidden; border-radius:2px;">
+                <div class="fb-page" data-href="https://www.facebook.com/profile.php?id=100064863695074" data-tabs="" data-width="500" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-lazy="true"><blockquote cite="https://www.facebook.com/profile.php?id=100064863695074" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/profile.php?id=100064863695074">Об&#039;єднання організацій роботодавців України</a></blockquote></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
 
       </main>
 

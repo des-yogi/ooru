@@ -1,14 +1,15 @@
 <!--DEV
-
-Для использования этого файла как шаблона:
-
 @ @include('blocks/telegram-block/telegram-block.html')
-
-(Нужно убрать пробел между символами @)
-Подробнее: https://www.npmjs.com/package/gulp-file-include
-
-
-
-<div class="telegram-block">content</div>
-
 -->
+
+<aside class="telegram-block  b-lazy" data-src="img/telegram-bg.jpg">
+  <a href="https://t.me/feed_name" class="telegram-block__link" target="_blank" rel="nofollow noopener">
+    <div class="telegram-block__text">
+      <h2 class="telegram-block__title">
+        Telegram канал <span class="visually-hidden">ООРУ</span>
+      </h2>
+      <p class="telegram-block__cta-text">Підпишись на Telegram канал</p>
+    </div>
+    <img class="telegram-block__logo" src="img/telegram-icon.png" width="92" height="92" alt="" loading="lazy">
+  </a>
+</aside>

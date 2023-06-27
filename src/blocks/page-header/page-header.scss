@@ -1,4 +1,76 @@
 .page-header {
+  position: relative;
+  z-index: 5;
+
+  @media (min-width: $screen-xl) {
+    padding-bottom: 48px;
+  }
 
   $block-name:                &; // #{$block-name}__element
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-top: 12px;
+    padding-bottom: 12px;
+
+    @media (min-width: $screen-xl) {
+      padding-bottom: 24px;
+    }
+  }
+
+  &__user-ctrl {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    & > * + * {
+      margin-left: 8px;
+    }
+  }
+
+  &__user-search {
+
+  }
+
+  &__nav-wrapper {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    background-color: $white;
+    border-top: 1px solid $main-color;
+    will-change: auto;
+
+    @media (min-width: $menu-desktop-width) {
+      display: block !important;
+      position: relative;
+      color: $white;
+      background-color: $main-color;
+    }
+  }
+
+  &__btn {
+    text-transform: uppercase;
+
+    &--mob {
+      width: 100%;
+      margin-bottom: 12px;
+
+      @media (min-width: $screen-xl) {
+        display: none;
+      }
+    }
+
+    &--dt {
+
+      @media (max-width: $screen-xl - 1) {
+        display: none;
+      }
+    }
+  }
 }

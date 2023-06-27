@@ -1,6 +1,3 @@
-$toggler-part-height:         3px !default;
-$toggler-part-bg-color:       #000 !default;
-
 .burger {
 
   $block-name:                &; // #{$block-name}__element
@@ -9,57 +6,76 @@ $toggler-part-bg-color:       #000 !default;
   z-index: 1;
   display: flex;
   align-items: center;
-  width: 30px;
-  height: 30px;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  padding: 0;
+  color: $toggler-part-bg-color;
+  background-color: $white;
+  border: none;
   user-select: none;
   cursor: pointer;
 
+  @media (min-width: $menu-desktop-width) {
+    display: none;
+  }
+
+  &:hover,
+  &:focus {
+    color: $link-color--hover !important;
+  }
+
   > span {
     display: inline-block;
-    width: 100%;
+    width: 22px;
     height: $toggler-part-height;
-    background: $toggler-part-bg-color;
+    background: currentColor;
     position: relative;
-    transition: background $transition-time $transition-time;
+    @include radius(2px);
+    transition: all $transition-time $transition-time;
 
-    &:before,
-    &:after {
+    &::before,
+    &::after {
       content: '';
       position: absolute;
-      left: 0;
-      width: 100%;
+      width: 65%;
       height: $toggler-part-height;
-      background: $toggler-part-bg-color;
+      background: currentColor;
+      @include radius(2px);
       transform-origin: 50% 50%;
       transition: top $transition-time $transition-time, transform $transition-time;
     }
 
-    &:before {
-      top: -10px;
+    &::before {
+      top: -7px;
+      right: 0;
     }
 
-    &:after {
-      top: 10px;
+    &::after {
+      top: 7px;
+      left: 0;
     }
   }
 
   &--close {
+    color: $main-color;
 
     > span {
       transition: background $transition-time 0s;
       background: transparent;
 
-      &:before,
-      &:after {
-        transition: top $transition-time, transform $transition-time $transition-time;
+      &::before,
+      &::after {
+        width: 100%;
         top: 0;
+        transition: all $transition-time, transform $transition-time $transition-time;
       }
 
-      &:before {
+      &::before {
         transform: rotate3d(0, 0, 1, 45deg);
       }
 
-      &:after {
+      &::after {
         transform: rotate3d(0, 0, 1, -45deg);
       }
     }

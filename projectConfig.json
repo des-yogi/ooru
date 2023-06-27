@@ -40,7 +40,8 @@
     "social-links": [],
     "copyrights": [],
     "news-card-spec": [],
-    "events-slider": []
+    "events-slider": [],
+    "fb-block": []
   },
   "addCssBefore": [
     "../../node_modules/bootstrap/scss/_functions",

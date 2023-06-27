@@ -2,6 +2,91 @@
 @ @include('blocks/page-header/page-header.html')
 -->
 
-<header class="container  page-header">
-  page-header
+<header class="page-header">
+
+  <div class="container  page-header__inner">
+    <a href="index.html" class="logo" title="ООРУ">
+      <picture>
+        <source srcset="img/ooru-logo-dt.png" media="(min-width: 1280px)" type="image/png">
+        <source srcset="img/ooru-logo-tab.png" media="(min-width: 768px)" type="image/png">
+        <source srcset="img/ooru-logo-mob.png" media="(min-width: 360px)" type="image/png">
+        <img src="img/ooru-logo-dt.png" alt="ООРУ logo" width="324" height="97">
+      </picture>
+    </a>
+
+    <div class="page-header__user-ctrl">
+
+      @@include('../../blocks/lang-switcher/lang-switcher.html')
+
+      <button class="btn btn--icon" aria-label="Відкрити Пошук">
+        <svg width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#search"></use></svg>
+      </button>
+
+      @@include('../../blocks/burger/burger.html')
+
+      <a href="#" class="btn  btn--main  page-header__btn  page-header__btn--dt">
+        <span>Членство в ООРУ</span>
+      </a>
+    </div>
+  </div>
+
+  <div id="collapseMenu" class="container  page-header__nav-wrapper  collapse">
+    <nav class="page-header__nav  main-nav">
+      <a href="#" class="btn  btn--main  page-header__btn  page-header__btn--mob">
+        <span>Членство в ООРУ</span>
+      </a>
+
+      <ul id="mainNav" class="list-nostyled  main-nav__list">
+        <li class="main-nav__item">
+          <a href="#collapseExample" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseExample" class="main-nav__link">Про нас</a>
+
+          <ul id="collapseExample" class="main-nav__list  main-nav__list--lvl-2  collapse" data-bs-parent="#mainNav">
+            <li class="main-nav__item  active">
+              <a href="#" class="main-nav__link">Про об'єднання</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Хто входить в ООРУ</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Лідери</a>
+            </li>
+          </ul>
+        </li>
+        <li class="main-nav__item">
+          <a href="#collapseExample2" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseExample2" class="main-nav__link">Медіа</a>
+
+          <ul id="collapseExample2" class="main-nav__list  main-nav__list--lvl-2  collapse" data-bs-parent="#mainNav">
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Новини</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Відео</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Фотогалерея</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Позиція</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Події</a>
+            </li>
+          </ul>
+        </li>
+        <li class="main-nav__item  active">
+          <a href="#" class="main-nav__link">Опитування</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">Проєкти</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">Соціальний діалог</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">Контакти</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
 </header>

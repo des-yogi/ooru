@@ -1,7 +1,9 @@
 .index-news {
+  padding-top: 40px;
   padding-bottom: 40px;
 
   @media (min-width: $screen-xl) {
+    padding-top: 24px;
     padding-bottom: 48px;
   }
 
