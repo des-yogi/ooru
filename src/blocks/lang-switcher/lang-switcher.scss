@@ -52,6 +52,7 @@
         height: 12px;
         background-color: $white;
         border-radius: 50%;
+        pointer-events: none;
       }
 
       &.active {

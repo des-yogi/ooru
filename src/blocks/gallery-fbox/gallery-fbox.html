@@ -1,0 +1,16 @@
+<!--DEV
+@ @include('blocks/gallery-fbox/gallery-fbox.html')
+-->
+
+<a href="img/project-about-img.jpg" class="embed-responsive embed-responsive--4-3  gallery-fbox"
+   data-fancybox="gallery" data-caption="Image Caption" title="Image Caption">
+  <picture>
+    <source srcset="img/project-about-img.webp" media="(min-width: 1280px)" type="image/webp">
+    <source srcset="img/project-about-img.jpg" media="(min-width: 1280px)">
+      <!-- 384x288 -->
+    <source srcset="img/project-about-img.webp" media="(min-width: 360px)" type="image/webp">
+    <source srcset="img/project-about-img.jpg" media="(min-width: 360px)">
+      <!-- 735x551 -->
+    <img src="img/project-about-img.jpg" alt="Description" width="735" height="551" loading="lazy">
+  </picture>
+</a>

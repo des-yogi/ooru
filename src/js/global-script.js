@@ -68,6 +68,18 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
   burger.addEventListener('click', burgerToggleHandler);
 })();
 
+(function(){
+  Fancybox.bind('[data-fancybox="gallery"]', {
+  // Your custom options
+  });
+  Fancybox.bind('[data-fancybox="gallery-2"]', {
+  // Your custom options
+  });
+  Fancybox.bind('[data-fancybox="gallery-3"]', {
+  // Your custom options
+  });
+}());
+
 // (function(){
 //   // code
 // }());

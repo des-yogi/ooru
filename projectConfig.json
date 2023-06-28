@@ -43,7 +43,11 @@
     "events-slider": [],
     "fb-block": [],
     "offcanvas": [],
-    "modal": []
+    "modal": [],
+    "submenu-block": [],
+    "project-page": [],
+    "project-about": [],
+    "gallery-fbox": []
   },
   "addCssBefore": [
     "../../node_modules/bootstrap/scss/_functions",

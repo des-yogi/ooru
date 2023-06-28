@@ -1,0 +1,30 @@
+.submenu-block {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__list {
+    @include row(
+      $xs-grid-gutter:  $grid-gutter-width,
+      $sm-grid-gutter:  12px,
+      $md-grid-gutter:  12px,
+      $lg-grid-gutter:  12px,
+      $xl-grid-gutter:  12px,
+      $xxl-grid-gutter: 12px
+    );
+    gap: 12px 0;
+  }
+
+  &__item {
+    @include col(xs, 12);
+    @include col(md, 6, $grid-columns, 12px);
+    @include col(lg, 4, $grid-columns, 12px);
+    @include col(xl, 2, $grid-columns, 12px);
+  }
+
+  &__link {
+    justify-content: initial;
+    width: 100%;
+    padding: 0 18px;
+    text-transform: uppercase;
+  }
+}
