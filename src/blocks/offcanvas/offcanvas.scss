@@ -1,0 +1,17 @@
+.offcanvas {
+  background-color: $white;
+
+  $block-name:                &; // #{$block-name}__element
+
+  &.offcanvas-top {
+    height: 170px;
+  }
+
+  .btn {
+
+    &:hover,
+    &:focus {
+      color: $color-danger;
+    }
+  }
+}

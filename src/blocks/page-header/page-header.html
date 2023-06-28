@@ -18,7 +18,12 @@
 
       @@include('../../blocks/lang-switcher/lang-switcher.html')
 
-      <button class="btn btn--icon" aria-label="Відкрити Пошук">
+      <button class="btn btn--icon"
+        aria-label="Відкрити Пошук"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasTop"
+        aria-controls="offcanvasTop"
+      >
         <svg width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#search"></use></svg>
       </button>
 
@@ -41,14 +46,14 @@
           <a href="#collapseExample" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseExample" class="main-nav__link">Про нас</a>
 
           <ul id="collapseExample" class="main-nav__list  main-nav__list--lvl-2  collapse" data-bs-parent="#mainNav">
-            <li class="main-nav__item  active">
-              <a href="#" class="main-nav__link">Про об'єднання</a>
+            <li class="main-nav__item  main-nav__item--lvl-2  active">
+              <a href="#" class="main-nav__link  main-nav__link--lvl-2">Про об'єднання</a>
             </li>
-            <li class="main-nav__item">
-              <a href="#" class="main-nav__link">Хто входить в ООРУ</a>
+            <li class="main-nav__item  main-nav__item--lvl-2">
+              <a href="#" class="main-nav__link  main-nav__link--lvl-2">Хто входить в ООРУ</a>
             </li>
-            <li class="main-nav__item">
-              <a href="#" class="main-nav__link">Лідери</a>
+            <li class="main-nav__item  main-nav__item--lvl-2">
+              <a href="#" class="main-nav__link  main-nav__link--lvl-2">Лідери</a>
             </li>
           </ul>
         </li>
@@ -56,20 +61,20 @@
           <a href="#collapseExample2" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseExample2" class="main-nav__link">Медіа</a>
 
           <ul id="collapseExample2" class="main-nav__list  main-nav__list--lvl-2  collapse" data-bs-parent="#mainNav">
-            <li class="main-nav__item">
-              <a href="#" class="main-nav__link">Новини</a>
+            <li class="main-nav__item  main-nav__item--lvl-2">
+              <a href="#" class="main-nav__link  main-nav__link--lvl-2">Новини</a>
             </li>
-            <li class="main-nav__item">
-              <a href="#" class="main-nav__link">Відео</a>
+            <li class="main-nav__item  main-nav__item--lvl-2">
+              <a href="#" class="main-nav__link  main-nav__link--lvl-2">Відео</a>
             </li>
-            <li class="main-nav__item">
-              <a href="#" class="main-nav__link">Фотогалерея</a>
+            <li class="main-nav__item  main-nav__item--lvl-2">
+              <a href="#" class="main-nav__link  main-nav__link--lvl-2">Фотогалерея</a>
             </li>
-            <li class="main-nav__item">
-              <a href="#" class="main-nav__link">Позиція</a>
+            <li class="main-nav__item  main-nav__item--lvl-2">
+              <a href="#" class="main-nav__link  main-nav__link--lvl-2">Позиція</a>
             </li>
-            <li class="main-nav__item">
-              <a href="#" class="main-nav__link">Події</a>
+            <li class="main-nav__item  main-nav__item--lvl-2">
+              <a href="#" class="main-nav__link  main-nav__link--lvl-2">Події</a>
             </li>
           </ul>
         </li>

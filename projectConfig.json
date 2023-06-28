@@ -41,15 +41,18 @@
     "copyrights": [],
     "news-card-spec": [],
     "events-slider": [],
-    "fb-block": []
+    "fb-block": [],
+    "offcanvas": [],
+    "modal": []
   },
   "addCssBefore": [
     "../../node_modules/bootstrap/scss/_functions",
     "../../node_modules/bootstrap/scss/_variables",
     "../../node_modules/bootstrap/scss/_mixins",
+    "../../node_modules/bootstrap/scss/_modal",
+    "../../node_modules/bootstrap/scss/_offcanvas",
     "./src/scss/variables.scss",
     "./src/scss/mixins.scss",
-    "../../node_modules/bootstrap/scss/_modal",
     "../../node_modules/swiper/swiper-bundle.css"
   ],
   "addCssAfter": [
@@ -74,6 +77,7 @@
     "./node_modules/bootstrap/js/dist/util/focustrap.js",
     "./node_modules/bootstrap/js/dist/util/component-functions.js",
     "./node_modules/bootstrap/js/dist/modal.js",
+    "./node_modules/bootstrap/js/dist/offcanvas.js",
     "./node_modules/bootstrap/js/dist/collapse.js",
     "./node_modules/swiper/swiper-bundle.min.js"
   ],

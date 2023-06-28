@@ -43,10 +43,41 @@
 
   &__item {
 
+    @media (max-width: $menu-desktop-width - 1) {
+      padding: 12px 0;
+    }
+
+    @media (min-width: $menu-desktop-width) {
+      margin-right: 24px;
+    }
+
+    &:not(:last-child) {
+
+      @media (max-width: $menu-desktop-width - 1) {
+        border-bottom: 1px solid $border-color;
+      }
+    }
+
     &.active {
 
       & > #{$block-name}__link {
         color: $link-color;
+      }
+    }
+
+    &--lvl-2 {
+      border-bottom: none !important;
+      margin-top: 8px;
+
+      @media (max-width: $menu-desktop-width - 1) {
+        padding: 0;
+      }
+
+      &.active {
+
+        & > #{$block-name}__link {
+          color: $link-color !important;
+        }
       }
     }
   }
@@ -58,7 +89,6 @@
     text-decoration: none;
     text-transform: uppercase;
     color: $title-color;
-    //background-color: #fff;
 
     &:hover,
     &:focus {
@@ -69,6 +99,14 @@
 
     @media (min-width: $menu-desktop-width) {
       color: $white !important;
+
+      &[aria-expanded="false"],
+      &[aria-expanded="true"] {
+
+        &::after {
+          background-image: svg-load('../blocks/sprite-svg/svg/chevron-down.svg', fill=$white) !important;
+        }
+      }
 
       &:hover,
       &:focus {
@@ -103,6 +141,21 @@
 
       &::after {
         transform: translateY(-50%) rotate(180deg);
+        background-image: svg-load('../blocks/sprite-svg/svg/chevron-down.svg', fill=$link-color);
+      }
+    }
+
+    &--lvl-2 {
+
+      @media (min-width: $menu-desktop-width) {
+        padding-top: 11px;
+        padding-bottom: 11px;
+
+        &:hover,
+        &:focus {
+          text-decoration: none;
+          color: $link-color !important;
+        }
       }
     }
   }

@@ -1,12 +1,20 @@
-// (function(){
-//   const langSwitcher = document.getElementById('lang-switcher');
-//   let togglerBtn = document.getElementById('lang-switcher-toggler');
-//   let page = document.documentElement;
-//   let lang = page.lang;
+(function(){
+  const item = document.querySelector('.lang-switcher__item.uk');
 
-//   if (langSwitcher) {
-//     const langChangeHandler = function (e) {
-//       togglerBtn.innerHTML = lang;
-//     }();
-//   }
-// }());
+  if (!item) return;
+
+  item.addEventListener('click', function (e) {
+    //if ((e.offsetX > item.offsetWidth) || (e.offsetY > item.offsetHeight)) {
+      //window.location.href = 'http://example.com/';
+    //}
+
+    if (item.classList.contains('active')) {
+      console.log(item.previousElementSibling.querySelector('a').href);
+      //window.location.href = item.previousElementSibling.querySelector('a').href;
+    }
+    else {
+      console.log(item.querySelector('a').href);
+    }
+
+  });
+}());
