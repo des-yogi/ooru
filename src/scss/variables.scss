@@ -1,5 +1,9 @@
 // Базовые цвета https://colorscheme.ru/color-converter.html
 
+:root {
+  --bs-offcanvas-bg: #ffffff !important;
+}
+
 $black:                       hsl(0, 0%, 0%);
 $gray-darkest:                hsl(0, 0%, 10%);
 $gray-darker:                 hsl(0, 0%, 20%);
@@ -92,7 +96,7 @@ $grid-gutter-width:           24px;
 
 // Разное
 
-$field-padding-vertical:      5px;
+$field-padding-vertical:      14px;
 $field-padding-horizontal:    24px;
 
 $border-radius:               2px;

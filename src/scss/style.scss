@@ -7,9 +7,10 @@
 @import '../../node_modules/bootstrap/scss/_functions';
 @import '../../node_modules/bootstrap/scss/_variables';
 @import '../../node_modules/bootstrap/scss/_mixins';
+@import '../../node_modules/bootstrap/scss/_modal';
+@import '../../node_modules/bootstrap/scss/_offcanvas';
 @import './src/scss/variables.scss';
 @import './src/scss/mixins.scss';
-@import '../../node_modules/bootstrap/scss/_modal';
 @import '../../node_modules/swiper/swiper-bundle.css';
 @import './src/blocks/breadcrumbs/breadcrumbs.scss';
 @import './src/blocks/btn/btn.scss';
@@ -53,4 +54,6 @@
 @import './src/blocks/news-card-spec/news-card-spec.scss';
 @import './src/blocks/events-slider/events-slider.scss';
 @import './src/blocks/fb-block/fb-block.scss';
+@import './src/blocks/offcanvas/offcanvas.scss';
+@import './src/blocks/modal/modal.scss';
 @import './src/scss/print.scss';
