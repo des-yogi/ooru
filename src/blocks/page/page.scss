@@ -33,8 +33,7 @@
     @media (min-width: 1920px) {
       background-image:
         url(../img/left-vert.png), url(../img/right-vert.png);
-      background-repeat-x: no-repeat;
-      background-repeat-y: repeat;
+      background-repeat: no-repeat repeat, no-repeat repeat;
       background-position: left top 15px, right top 15px;
       background-size: 240px 74px;
       background-attachment: fixed;
