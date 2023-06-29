@@ -5,7 +5,20 @@ $text-color:                  hsl(0, 0%, 10%) !default;
   padding-top: 24px;
   padding-bottom: 24px;
 
+
   $block-name:                &; // #{$block-name}__element
+
+  &::before {
+
+    @media (max-width: $screen-xl - 1) {
+      display: block;
+      content: "";
+      width: 100%;
+      height: 1px;
+      transform: translateY(-24px);
+      background-color: $main-color;
+    }
+  }
 
   &__list {
     display: flex;

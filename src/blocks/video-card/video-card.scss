@@ -1,5 +1,31 @@
 .video-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 
   $block-name:                &; // #{$block-name}__element
 
+  .datetime {
+    margin-top: 24px;
+    color: $main-color;
+  }
+
+  &__video {
+    flex: 0 0 auto;
+    border-radius: $border-radius;
+
+    iframe {
+      border: none;
+    }
+  }
+
+  &__text {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    margin: 24px 0 auto;
+  }
 }

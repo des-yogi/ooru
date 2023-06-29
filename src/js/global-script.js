@@ -68,53 +68,8 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
   burger.addEventListener('click', burgerToggleHandler);
 })();
 
-(function(){
-  Fancybox.bind('[data-fancybox="gallery"]', {
-  // Your custom options
-  });
-  Fancybox.bind('[data-fancybox="gallery-2"]', {
-  // Your custom options
-  });
-  Fancybox.bind('[data-fancybox="gallery-3"]', {
-  // Your custom options
-  });
-}());
 
 // (function(){
 //   // code
 // }());
 
-
-// $(document).ready(function(){
-//   if(window.matchMedia('(min-width: 1366px)').matches){
-//   // do functionality on screens bigger than 1366px
-//     $("#sticker").sticky({
-//       topSpacing: 100
-//     });
-//   }
-//   return false;
-// });
-
-/*(function () {
-  //const agreementElems = document.querySelectorAll('.contacts__agreement');
-  const agreementElems = document.querySelectorAll('[class$="__agreement"]');
-
-  for (let i = 0; i < agreementElems.length; i++) {
-    let agreementElem = agreementElems[i];
-    if (!agreementElem) return;
-    //const submitBtn = agreementElem.querySelector('.contacts__submit');
-    const submitBtn = agreementElem.querySelector('button[type=submit]');
-    const agreementCheckbox = agreementElem.querySelector('.agreement-field');
-
-    if (agreementCheckbox) {
-      agreementCheckbox.addEventListener('change', function (e) {
-        if (!e.target.checked) {
-          submitBtn.disabled = true;
-        } else {
-          submitBtn.disabled = false;
-        }
-      });
-    }
-  }
-
-})();*/

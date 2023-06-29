@@ -334,6 +334,10 @@ a {
   margin: 0;
   font-size: $font-size-sm;
   font-weight: 500;
+
+  &:empty {
+    display: none;
+  }
 }
 
 // Swiper controls
@@ -355,6 +359,7 @@ a {
     color: $link-color;
     border: 1px solid $link-color;
     border-radius: $border-radius;
+    user-select: none;
 
     &::after {
       font-size: 14px;

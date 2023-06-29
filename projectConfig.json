@@ -47,7 +47,11 @@
     "submenu-block": [],
     "project-page": [],
     "project-about": [],
-    "gallery-fbox": []
+    "gallery-fbox": [],
+    "docs-card": [],
+    "media-pages": [],
+    "text-page": [],
+    "share-links": []
   },
   "addCssBefore": [
     "../../node_modules/bootstrap/scss/_functions",

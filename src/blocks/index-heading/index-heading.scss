@@ -27,6 +27,13 @@
 
     #{$block-name}__text {
       margin-left: 0;
+
+      & > span {
+        display: block;
+        font-size: 28px;
+        font-weight: 600;
+        color: $title-color;
+      }
     }
 
     svg {

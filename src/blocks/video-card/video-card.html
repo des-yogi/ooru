@@ -1,14 +1,20 @@
 <!--DEV
-
-Для использования этого файла как шаблона:
-
-@ @include('blocks/video-card/video-card.html')
-
-(Нужно убрать пробел между символами @)
-Подробнее: https://www.npmjs.com/package/gulp-file-include
-
-
-
-<div class="video-card">content</div>
-
+@ @include('blocks/video-card/video-card.html', {
+  "code": "kbKBC53fzRk",
+  "title": "Семінар «Впровадження енергоефективних технологій компаніями для підвищення конкурентоспроможності»",
+  "date": "16 Березня 2023"
+})
 -->
+
+<article class="video-card">
+  <div class="embed-responsive  video-card__video">
+    <iframe class="b-lazy" title="@@title" data-src="https://www.youtube.com/embed/@@code" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen width="328" height="184"></iframe>
+  </div>
+  <div class="video-card__text">
+    <h3 class="h5  video-card__title">
+      <a href="#">@@title</a>
+    </h3>
+    <!-- not display if empty -->
+    <time class="datetime" datetime="2023-03-16">@@date</time>
+  </div>
+</article>

@@ -5,7 +5,7 @@
   &__list {
     @include row(
       $xs-grid-gutter:  $grid-gutter-width,
-      $sm-grid-gutter:  12px,
+      $sm-grid-gutter:  $grid-gutter-width,
       $md-grid-gutter:  12px,
       $lg-grid-gutter:  12px,
       $xl-grid-gutter:  12px,
@@ -19,6 +19,15 @@
     @include col(md, 6, $grid-columns, 12px);
     @include col(lg, 4, $grid-columns, 12px);
     @include col(xl, 2, $grid-columns, 12px);
+
+    &.active {
+
+      #{$block-name}__link {
+        color: $white;
+        background-color: $link-color;
+        cursor: default;
+      }
+    }
   }
 
   &__link {
@@ -26,5 +35,21 @@
     width: 100%;
     padding: 0 18px;
     text-transform: uppercase;
+  }
+
+  &--sidebar {
+    margin-bottom: 40px;
+
+    #{$block-name}__list {
+
+      @media (min-width: $screen-xl) {
+        margin-right: -12px;
+        margin-left: -12px;
+      }
+    }
+
+    #{$block-name}__item {
+      @include col(xl, 12);
+    }
   }
 }
