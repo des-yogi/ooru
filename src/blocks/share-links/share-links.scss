@@ -1,0 +1,9 @@
+.share-links {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+
+  $block-name:                &; // #{$block-name}__element
+
+}

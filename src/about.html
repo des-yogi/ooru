@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="uk" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <title>Про нас</title>
+  @@include('_include/page_head.html')
+
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"> -->
+</head>
+
+<body>
+  <!-- <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/uk_UA/sdk.js#xfbml=1&version=v17.0" nonce="IqeeQBxi"></script> -->
+
+<noscript>У вас вимкнено JavaScript. Приносимо наші вибачення, але це ускладнює використання цього сайту. / You have disabled JavaScript. We apologize, but this makes it difficult to use this site.</noscript>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+      @@include('blocks/top-banner/top-banner.html')
+
+      @@include('blocks/page-header/page-header.html')
+
+      @@include('blocks/breadcrumbs/breadcrumbs.html')
+
+      <main class="main">
+        <div class="container  about-page">
+
+          @@include('blocks/index-heading/index-heading.html', {
+            "tag": "h1",
+            "addClass": "index-heading--no-index",
+            "icon": "",
+            "text": "Про об'єднання</span>"
+          })
+
+          <div class="about-page__inner">
+
+            <div class="about-page__header">
+
+              <div class="embed-responsive  embed-responsive--about">
+                <picture>
+                  <source srcset="img/about-cap.webp" media="(min-width: 768px)" type="image/webp">
+                  <source srcset="img/about-cap.jpg" media="(min-width: 768px)">
+                    <!-- 1200x400 -->
+                  <source srcset="img/about-cap.webp" media="(min-width: 360px)" type="image/webp">
+                  <source srcset="img/about-cap.jpg" media="(min-width: 360px)">
+                    <!-- 720x240 -->
+                  <img class="about-page__header-img" src="img/about-cap.jpg" width="1200" height="400" alt="">
+                </picture>
+              </div>
+
+              <nav class="submenu-block  submenu-block--about">
+                <ul class="list-nostyled  submenu-block__list">
+
+                  <li class="submenu-block__item  active">
+                    <a class="btn  submenu-block__link">
+                      <svg width="24" height="24" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#home"></use></svg>
+                      <span>Про об'єднання</span>
+                    </a>
+                  </li>
+
+                  <li class="submenu-block__item">
+                    <a href="#" class="btn  submenu-block__link">
+                      <svg width="24" height="24" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#user-profile"></use></svg>
+                      <span>Хто входить</span>
+                    </a>
+                  </li>
+
+                  <li class="submenu-block__item">
+                    <a href="#" class="btn  submenu-block__link">
+                      <svg width="24" height="24" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#marker"></use></svg>
+                      <span>Лідери</span>
+                    </a>
+                  </li>
+
+                </ul>
+              </nav>
+            </div>
+
+            <div class="row  about-page__content">
+              <div class="about-page__content-col">
+                <h2>Об’єднання організацій роботодавців України</h2>
+
+                <p>Відстоює інтереси і права роботодавців у відносинах з органами державної влади, органами місцевого самоврядування та професійними спілками. ООРУ виступає стороною від роботодавців у колективних переговорах на національному рівні, в укладанні та виконанні Генеральної угоди; сприяє вирішенню індивідуальних трудових спорів; долучається до регулювання соціально-трудових, економічних відносин, державних програм зайнятості, охорони праці, проведення податкової, цінової політики. Сфера його діяльності – сприяння створенню та збереженню робочих місць, вдосконалення системи підготовки, перепідготовки і підвищення кваліфікації кадрів тощо.</p>
+                <p>Об'єднання організацій роботодавців України активно працює над проблемами розбудови економічних і соціально-трудових відносин у країні:</p>
+                <ul>
+                  <li>становленням ефективного соціального діалогу на всіх рівнях управління: від окремого підприємства, селища, міста, району, області до Верховної Ради України та Кабінету Міністрів України;</li>
+                  <li>створенням сприятливого клімату для розвитку промисловості та підприємництва;</li>
+                  <li>посиленням соціальної відповідальності бізнесу.</li>
+                </ul>
+                <p>ООРУ захищає інтереси вітчизняного товаровиробника в умовах СОТ, сприяє інтеграції України у світовий економічний простір, її участі у міжнародному розподілі праці та імплементації міжнародних норм законодавства в українське правове поле.</p>
+                <p>ООРУ створено у 2009 році, до його складу входить 8 всеукраїнських та 24 територіальних об’єднань організацій роботодавців. Загальна кількість найманих працівників, які працюють на підприємствах – членах ООРУ, складає понад 2 мільйона.</p>
+                <p>Об’єднання має Свідоцтво про відповідність критеріям репрезентативності, яке видала Національна служба посередництва і примирення України.</p>
+                <p>ООРУ є однією з активніших структур роботодавців держави, його представники входять до складу Фондів соціального страхування, Ради української хартії «За ділову досконалість і якість», Тристороннього спостережного комітету в рамках Проекту ЄС-МБП «Поліпшення стану безпеки праці та здоров’я на робочих місцях в контексті гідної праці».</p>
+                <p>ООРУ внесла свої пропозиції до проекту Генеральної угоди на 2019-2020рр.</p>
+                <p>Об’єднання цілеспрямовано працює над зміцненням своєї структури, розширенням робочих контактів. Підписано меморандум зі Спілкою орендарів і підприємців України, в якому сторони відстоюють рівноправну участь в соціальному діалозі всіх організацій роботодавців країни без обмежень і виключень.</p>
+
+                <blockquote>
+                  <p>Об’єднання активно працює на міжнародній арені. Його представники взяли участь у засіданні Міжнародної координаційної ради об’єднань роботодавців в Варні (Болгарія), в VII зібранні Міжнародної ради об’єднань роботодавців у Астані ( Казахстан), у роботі 104 сесії Міжнародної конфедерації праці (Женева, Швейцарія).</p>
+                  <p>Голова ООРУ - Анатолій Кирилович Кінах.</p>
+                </blockquote>
+              </div>
+            </div>
+
+            <div class="about-page__docs">
+              @@include('blocks/about-docs/about-docs.html')
+            </div>
+
+          </div>
+
+        </div>
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  <div class="container  offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+    <div class="offcanvas-header" style="padding: 24px 0 10px;">
+      <h5 class="offcanvas-title visually-hidden" id="offcanvasTopLabel" style="margin-top:0;">
+        Пошук по сайту
+      </h5>
+      <button type="button" class="btn  btn--icon" data-bs-dismiss="offcanvas" aria-label="Close" style="margin-left: auto;">
+        <svg width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#close"></use></svg>
+      </button>
+    </div>
+    <div class="offcanvas-body" style="padding: 0 0 24px;">
+      <form id="searchForm" class="form" action="" method="post">
+        <label class="field-text" style="margin-bottom:0;">
+          <span class="field-text__input-wrap">
+            <input class="field-text__input" type="text" name="search" value="" placeholder="Пошук…">
+            <span class="field-text__help-text"></span>
+          </span>
+        </label>
+      </form>
+    </div>
+  </div>
+
+  <!-- Fancybox -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script> -->
+
+  @@include('_include/page_bottom.html')
+
+  <!-- <script>
+    (function(){
+      Fancybox.bind('[data-fancybox="gallery"]', {
+        // Your custom options
+      });
+    }());
+  </script> -->
+
+</body>
+</html>

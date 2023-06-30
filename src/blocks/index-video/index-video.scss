@@ -9,14 +9,6 @@
 
   $block-name:                &; // #{$block-name}__element
 
-  .embed-responsive {
-    border-radius: $border-radius;
-
-    iframe {
-      border: none;
-    }
-  }
-
   &__col {
 
     & + & {

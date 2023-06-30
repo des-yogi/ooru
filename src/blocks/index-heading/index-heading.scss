@@ -15,8 +15,29 @@
     text-transform: uppercase;
   }
 
-  &--first {
+  &--first,
+  &--no-index {
     padding-top: 0;
     border-top: none;
+  }
+
+  &--no-index {
+    padding: 0 0 24px;
+    margin-bottom: 0;
+
+    #{$block-name}__text {
+      margin-left: 0;
+
+      & > span {
+        display: block;
+        font-size: 28px;
+        font-weight: 600;
+        color: $title-color;
+      }
+    }
+
+    svg {
+      display: none;
+    }
   }
 }

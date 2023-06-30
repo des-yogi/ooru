@@ -1,0 +1,10 @@
+.gallery-fbox {
+  border-radius: $border-radius;
+
+  $block-name:                &; // #{$block-name}__element
+
+  img {
+    object-fit: cover;
+    object-position: center;
+  }
+}

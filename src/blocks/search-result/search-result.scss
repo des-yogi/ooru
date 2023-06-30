@@ -1,0 +1,37 @@
+.search-result {
+
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__inner {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    @media (min-width: $screen-xl) {
+      padding-top: 48px;
+      padding-bottom: 48px;
+    }
+  }
+
+  &__inner-col {
+    @include col(xs, 12);
+    @include col(md, 10);
+    @include col(xl, 8);
+
+    mark {
+      font-weight: 600;
+    }
+  }
+
+  &__content-item {
+
+    & + & {
+      margin-top: 1em;
+    }
+
+    p {
+      margin-top: 0.5em;
+      font-size: $font-size-sm;
+    }
+  }
+}

@@ -203,6 +203,14 @@ figure {
   margin-top: 16px;
   margin-bottom: 16px;
   color: inherit;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 p {
@@ -265,9 +273,35 @@ abbr[title] {
 }
 
 blockquote {
-  padding: 0;
+  position: relative;
+  padding: 64px 24px 24px;
   margin-left: 0;
   margin-right: 0;
+  color: $title-color;
+  background-color: $block-bg;
+  @include radius(16px);
+
+  &::before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    width: 24px;
+    height: 24px;
+    background-size: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: svg-load('../blocks/sprite-svg/svg/quote.svg', fill=$title-color);
+  }
+
+  p {
+    color: currentColor;
+
+    &:last-child:not(:first-child) {
+      font-weight: 500;
+    }
+  }
 }
 
 dt {

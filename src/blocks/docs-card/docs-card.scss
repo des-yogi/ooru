@@ -1,0 +1,41 @@
+.docs-card {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__title {
+    margin: 0 0 8px;
+  }
+
+  &__descr {
+    margin: 8px 0 24px;
+  }
+
+  &__panel {
+    padding: 24px 24px 16px;
+    margin-top: 24px;
+    background-color: $block-bg;
+    border-radius: $border-radius;
+  }
+
+  &__list {
+    margin-top: 0;
+
+    @media (min-width: $screen-md) {
+      columns: 2;
+      column-gap: 44px;
+    }
+  }
+
+  &__item {
+    margin-bottom: 8px;
+
+    &::marker {
+      color: $link-color;
+    }
+  }
+
+  &__link {
+    font-size: $font-size-sm;
+    font-weight: 500;
+  }
+}

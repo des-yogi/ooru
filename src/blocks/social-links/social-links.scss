@@ -22,12 +22,12 @@
     width: 56px;
     height: 56px;
     text-decoration: none !important;
-    color: $title-color;
-    opacity: 0.8;
+    color: $link-color;
+
 
     &:hover,
     &:focus {
-      opacity: 1;
+      color: $link-color--hover;
     }
 
     svg {
@@ -48,6 +48,12 @@
 
     #{$block-name}__link {
       color: $white;
+      opacity: 0.8;
+
+      &:hover,
+      &:focus {
+        opacity: 1;
+      }
     }
   }
 }

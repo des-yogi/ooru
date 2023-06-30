@@ -79,6 +79,7 @@
     "blazy": "^1.8.2",
     "bootstrap": "^5.2.3",
     "focus-visible": "^5.2.0",
+    "imask": "^7.0.1",
     "svg4everybody": "^2.1.9",
     "swiper": "^9.4.1"
   }
