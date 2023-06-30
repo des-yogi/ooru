@@ -1,14 +1,29 @@
 <!--DEV
-
-Для использования этого файла как шаблона:
-
 @ @include('blocks/share-links/share-links.html')
-
-(Нужно убрать пробел между символами @)
-Подробнее: https://www.npmjs.com/package/gulp-file-include
-
-
-
-<div class="share-links">content</div>
-
 -->
+
+<ul class="list-nostyled  share-links">
+  <li class="share-links__item">
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https://url.com/" class="btn btn--icon-outlined  share-links__link" title="Share on Facebook" target="_blank" rel="nofollow noopener">
+      <svg width="24" height="24" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#facebook"></use></svg>
+    </a>
+  </li>
+
+  <li class="share-links__item">
+    <a href="https://www.linkedin.com/shareArticle?url=https://url.com/&title=Article%20title" class="btn btn--icon-outlined  share-links__link" title="Share on LinkedIn" target="_blank" rel="nofollow noopener">
+      <svg width="24" height="24" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#linkedin"></use></svg>
+    </a>
+  </li>
+
+  <li class="share-links__item">
+    <a href="https://twitter.com/intent/tweet?url=https://url.com/&text=Article%20title&via=userName" class="btn btn--icon-outlined  share-links__link" title="Share on Twitter" target="_blank" rel="nofollow noopener">
+      <svg width="24" height="24" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#twitter"></use></svg>
+    </a>
+  </li>
+
+  <li class="share-links__item">
+    <a href="https://t.me/share/url?url={url}&text={text}" class="btn btn--icon-outlined  share-links__link" title="Share on Telegram" target="_blank" rel="nofollow noopener">
+      <svg width="24" height="24" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#telegram"></use></svg>
+    </a>
+  </li>
+</ul>

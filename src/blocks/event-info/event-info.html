@@ -1,0 +1,55 @@
+<!--DEV
+@ @include('blocks/event-info/event-info.html')
+-->
+
+<section class="event-info">
+  <h2 class="visually-hidden">Додоткова інформація про подію</h2>
+
+  <table class="event-info__table">
+
+    <tr class="event-info__table-row">
+      <th class="event-info__table-th" id="countdownTitle">До початку залишилось</th>
+      <td class="event-info__table-td">
+        @@include('../../blocks/countdown/countdown.html', {
+          "deadline": "2023-12-31 18:59:00 GMT+0300"
+        })
+      </td>
+    </tr>
+
+    <tr class="event-info__table-row">
+      <th class="event-info__table-th">Ментор</th>
+      <td class="event-info__table-td">Катерина Спирідонова</td>
+    </tr>
+
+    <tr class="event-info__table-row">
+      <th class="event-info__table-th">Тип</th>
+      <td class="event-info__table-td">Онлайн</td>
+    </tr>
+
+    <tr class="event-info__table-row">
+      <th class="event-info__table-th">Місто</th>
+      <td class="event-info__table-td">Київ</td>
+    </tr>
+
+    <tr class="event-info__table-row">
+      <th class="event-info__table-th">Адреса</th>
+      <td class="event-info__table-td">вул. Михайла Максимовича, 3Г</td>
+    </tr>
+
+    <tr class="event-info__table-row">
+      <th class="event-info__table-th">Дата</th>
+      <td class="event-info__table-td">
+        <time class="event-info__datetime" datetime="Y-m-d">З 27 Листопада, 2023</time>
+        <time class="event-info__datetime" datetime="Y-m-d">По 30 Листопада, 2023</time>
+      </td>
+    </tr>
+
+  </table>
+
+  <div class="event-info__cta-text">
+    <p class="h5">Записатися на подію</p>
+    <p>Ви можете взяти участь у цій події, заповніть форму і ми обов'язково зв'яжемося з вами.</p>
+    <a href="#" class="btn  btn--main" target="_blank" rel="nofollow noopene">Заповнити форму</a>
+  </div>
+
+</section>

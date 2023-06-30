@@ -1,8 +1,8 @@
-// В этом файле должны быть стили для БЭМ-блока share-links, его элементов, 
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .share-links {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
 
   $block-name:                &; // #{$block-name}__element
 

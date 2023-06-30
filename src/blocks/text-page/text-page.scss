@@ -10,16 +10,16 @@
   &__sidebar-col {
     @include col(xs, 12);
     @include col(xl, 4);
+
+    @media (max-width: $screen-xl - 1) {
+      margin-top: 40px;
+    }
   }
 
   &__inner-col {
     @include col(xs, 12);
     @include col(md, 10);
     @include col(xl, 12);
-  }
-
-  &__article {
-
   }
 
   &__article-title {
@@ -75,7 +75,43 @@
     }
   }
 
-  &__sidebar {
+  &__sidebar-title {
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
 
+  &__sidebar-news {
+    gap: 24px 0;
+  }
+
+  &__share-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 16px;
+    padding-bottom: 40px;
+    border-top: 1px solid $main-color;
+  }
+
+  &__share-title {
+    margin: 0;
+  }
+
+  &__share-text {
+    flex: 1 1;
+    max-width: 400px;
+    margin-right: 24px;
+
+    @media (max-width: $screen-md - 1) {
+      flex-basis: auto;
+      margin-right: 0;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__share-block {
+    flex: 0 0 272px;
+    width: 272px;
   }
 }

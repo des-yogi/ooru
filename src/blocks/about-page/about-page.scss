@@ -1,0 +1,34 @@
+.about-page {
+
+  $block-name:                &; // #{$block-name}__element
+
+  .embed-responsive--about {
+    margin-bottom: 24px;
+    border-radius: $border-radius;
+  }
+
+  &__inner {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    @media (min-width: $screen-xl) {
+      padding-top: 48px;
+      padding-bottom: 48px;
+    }
+  }
+
+  &__header-img {
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__content-col {
+    @include col(xs, 12);
+    @include col(md, 10);
+    @include col(xl, 8);
+  }
+
+  &__docs {
+    margin-top: 40px;
+  }
+}

@@ -52,4 +52,11 @@
       @include col(xl, 12);
     }
   }
+
+  &--about {
+
+    #{$block-name}__item {
+      @include col(xl, 4, $grid-columns, 12px);
+    }
+  }
 }

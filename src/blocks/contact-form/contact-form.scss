@@ -1,0 +1,39 @@
+.contact-form {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
+
+  &__agreement {
+
+    @media (min-width: $screen-md) {
+      display: flex;
+      align-items: center;
+    }
+
+    .field-checkbox__name {
+
+      @media (min-width: $screen-md) {
+        flex: 1 1 auto;
+        margin-right: 24px;
+      }
+    }
+  }
+
+  &__submit-wrapper {
+    margin-top: 24px;
+
+    @media (min-width: $screen-md) {
+      flex: 0 0 160px;
+      width: 150px;
+      margin-top: 0;
+    }
+
+    .btn {
+      width: 100%;
+    }
+  }
+}

@@ -171,6 +171,16 @@
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut cursus id aliquet convallis diam dictum euismod sed. Diam dignissim tincidunt amet, sapien, tincidunt aliquam elementum arcu. Id odio nunc consectetur pellentesque. Malesuada consequat sagittis, eu quis interdum maecenas sit.</p>
 
                     </div>
+
+                    <section class="text-page__share-wrapper">
+                      <div class="text-page__share-text">
+                        <h5 class="h5  text-page__share-title">Читайте корисні статті та новини. Поширюйте їх соціальними мережами.</h5>
+                      </div>
+                      <div class="text-page__share-block">
+                        @@include('blocks/share-links/share-links.html')
+                      </div>
+                    </section>
+
                   </div>
 
                 </div>
@@ -180,12 +190,81 @@
           </div>
 
           <div class="text-page__sidebar-col">
-            <div class="text-page__sidebar"></div>
+            <aside class="text-page__sidebar">
+              <h2 class="h4  text-page__sidebar-title">Інші новини</h2>
+
+              <div class="row  text-page__sidebar-news">
+
+                <div class="col-1-2-1">
+                  @@include('blocks/news-card/news-card.html', {
+                    "img": "new-1",
+                    "text": "Потенціал виробництва зеленого водню в Україні становить 505 млн тон кубометрів: що потрібно для розвитку цього напряму?",
+                    "date": "15.08.2023"
+                  })
+                </div>
+
+                <div class="col-1-2-1">
+                  @@include('blocks/news-card/news-card.html', {
+                    "img": "new-2",
+                    "text": "Потенціал виробництва зеленого водню в Україні становить 505 млн тон кубометрів: що потрібно для розвитку цього напряму?",
+                    "date": "15.08.2023"
+                  })
+                </div>
+
+              </div>
+
+            </aside>
           </div>
 
         </div>
       </div>
 
+      <aside class="container  project-page__section">
+
+        @@include('blocks/index-heading/index-heading.html', {
+          "tag": "h2",
+          "addClass": "index-heading--no-index",
+          "icon": "",
+          "text": "Новини"
+        })
+
+        <div class="row  project-page__row"  style="margin-top: 40px;">
+
+          <div class="col-1-2-4">
+            @@include('blocks/news-card/news-card.html', {
+              "img": "new-1",
+              "text": "Потенціал виробництва зеленого водню в Україні становить 505 млн тон кубометрів: що потрібно для розвитку цього напряму?",
+              "date": "15.08.2023"
+            })
+          </div>
+
+          <div class="col-1-2-4">
+            @@include('blocks/news-card/news-card.html', {
+              "img": "new-2",
+              "text": "Керівників малого і середнього бізнесу навчають за програмою «Стале та стійке підприємство SURE»",
+              "date": "15.08.2023"
+            })
+          </div>
+
+          <div class="col-1-2-4">
+            @@include('blocks/news-card/news-card.html', {
+              "img": "new-1",
+              "text": "Потенціал виробництва зеленого водню в Україні становить 505 млн тон кубометрів: що потрібно для розвитку цього напряму?",
+              "date": "15.08.2023"
+            })
+          </div>
+
+          <div class="col-1-2-4">
+            @@include('blocks/news-card/news-card.html', {
+              "img": "new-2",
+              "text": "Бізнес та науковці виступили за розвиток системи переробки відходів в Україні: наразі 95% відходів знаходяться на звалищах",
+              "date": "15.08.2023"
+            })
+          </div>
+
+        </div>
+
+      </aside>
 
     </div>
 

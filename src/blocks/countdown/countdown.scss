@@ -1,9 +1,9 @@
 .countdown {
   display: inline-flex;
-  font-size: inherit;
-  font-weight: inherit;
+  font-size: 24px;
+  font-weight: 800;
   text-align: center;
-  color: $main-color;
+  color: $title-color;
 
   $block-name:                &; // #{$block-name}__element
 
@@ -22,8 +22,8 @@
       display: inline-block;
       vertical-align: baseline;
       content: attr(data-divider);
-      margin-right: 4px;
-      margin-left: 2px;
+      margin-right: 6px;
+      margin-left: -2px;
       font-size: inherit;
       font-weight: inherit;
     }
@@ -32,7 +32,7 @@
   &__deadline-message {
     display: none;
     font-size: inherit;
-    font-weight: 700;
+    font-weight: 800;
     color: $color-danger;
 
     &.visible {
