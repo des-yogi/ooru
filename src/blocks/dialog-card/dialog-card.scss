@@ -18,8 +18,11 @@
     }
 
     #{$block-name}__img-col {
-      order: 1;
       @include col-offset(xl, 1);
+
+      @media (min-width: $screen-xl) {
+        order: 1;
+      }
     }
   }
 
@@ -38,6 +41,10 @@
   &__text-col {
     @include col-offset(xl, 1);
     @include col(xl, 5);
+
+    @media (max-width: $screen-xl - 1) {
+      margin-top: 24px;
+    }
   }
 
   &__img {

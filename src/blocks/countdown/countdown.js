@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
         let minutes = Math.floor((t / 1000 / 60) % 60);
         let hours = Math.floor((t / (1000 * 60 * 60)) % 24);
         let days = Math.floor(t / (1000 * 60 * 60 * 24));
+        console.log(t);
         return {
           'total': t,
           'days': days,
