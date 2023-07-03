@@ -61,7 +61,8 @@
     "about-docs": [],
     "organization-card": [],
     "leader-card": [],
-    "dialog-card": []
+    "dialog-card": [],
+    "membership": []
   },
   "addCssBefore": [
     "../../node_modules/bootstrap/scss/_functions",

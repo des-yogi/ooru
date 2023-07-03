@@ -397,6 +397,31 @@ a {
   }
 }
 
+.slider-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex: 1 1 auto;
+  padding: 24px;
+  border: 1px solid $main-color;
+  border-radius: $border-radius;
+  background-color: transparent;
+  background-repeat: repeat;
+  background-position: top center;
+  background-size: 303px 99px;
+  background-image: url(../img/top-horiz.png);
+
+  &__inner {
+    flex: 0 0 270px;
+    text-align: center;
+  }
+
+ .h3 {
+    margin: 16px 0 0;
+  }
+}
+
 .col-1-1-2 {
   @include col(xs, 12);
   @include col(xl, 6);

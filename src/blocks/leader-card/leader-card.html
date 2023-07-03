@@ -1,14 +1,26 @@
 <!--DEV
-
-Для использования этого файла как шаблона:
-
-@ @include('blocks/leader-card/leader-card.html')
-
-(Нужно убрать пробел между символами @)
-Подробнее: https://www.npmjs.com/package/gulp-file-include
-
-
-
-<div class="leader-card">content</div>
-
+ @ @include('blocks/leader-card/leader-card.html', {
+  "addClass": "leader-card--other",
+  "img": "leader-1",
+  "name": "Кінах Анатолій Кирилович",
+ })
 -->
+
+<article class="leader-card  @@addClass">
+  <div class="embed-responsive embed-responsive--3-4  leader-card__img">
+    <picture>
+      <source srcset="img/@@img.webp" media="(min-width: 1280px)" type="inage/webp">
+      <source srcset="img/@@img.jpg" media="(min-width: 1280px)">
+        <!-- 282x376 -->
+      <source srcset="img/@@img.webp" media="(min-width: 360px)" type="inage/webp">
+      <source srcset="img/@@img.jpg" media="(min-width: 360px)">
+        <!-- 735x980 -->
+      <img src="img/@@img.jpg" width="735" height="980" alt="ПIБ" loading="lazy">
+    </picture>
+  </div>
+  <div class="leader-card__text">
+    <h2 class="h5  leader-card__title">@@name</h2>
+    <p class="leader-card__position  leader-card__position--main">Голова Об’єднання організацій роботодавців України</p>
+    <p class="leader-card__position">Президент Українського союзу промисловців і підприємців, голова ООРУ</p>
+  </div>
+</article>
