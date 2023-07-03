@@ -1,14 +1,35 @@
 <!--DEV
-
-Для использования этого файла как шаблона:
-
-@ @include('blocks/organization-card/organization-card.html')
-
-(Нужно убрать пробел между символами @)
-Подробнее: https://www.npmjs.com/package/gulp-file-include
-
-
-
-<div class="organization-card">content</div>
-
+@ @include('blocks/organization-card/organization-card.html', {
+  "name": "Об’єднання організацій роботодавців Волині"
+})
 -->
+
+<article class="organization-card">
+  <h2 class="h5  organization-card__title">@@name</h2>
+
+  <p class="organization-card__line  organization-card__line--no-icon">
+    Голова - Гунчик Володимир Петрович
+  </p>
+
+  <p class="organization-card__line  organization-card__line--no-icon">
+    Виконавчий директор - Анцух Юрій Володимирович
+  </p>
+
+  <p class="organization-card__line  organization-card__line--address">
+    43010, м. Луцьк, вул. Рівненська, 42,
+  </p>
+
+  <p class="organization-card__line  organization-card__line--tel">
+    <a href="tel:+380502928921">(050) 292-89-21</a>,
+    <a href="tel:+380502928921">(050) 292-89-21</a>
+  </p>
+
+  <p class="organization-card__line  organization-card__line--email">
+    <a href="mailto:vospp@meta.ua">vospp@meta.ua</a>
+  </p>
+
+  <p class="organization-card__line  organization-card__line--site">
+    <a href="#" target="_blank" rel="nofollow noopener">progress.com</a>
+  </p>
+
+</article>

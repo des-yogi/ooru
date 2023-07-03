@@ -1,14 +1,44 @@
 <!--DEV
-
-Для использования этого файла как шаблона:
-
-@ @include('blocks/dialog-card/dialog-card.html')
-
-(Нужно убрать пробел между символами @)
-Подробнее: https://www.npmjs.com/package/gulp-file-include
-
-
-
-<div class="dialog-card">content</div>
-
+@ @include('blocks/dialog-card/dialog-card.html', {
+  "img": "",
+  "title": "Попередні підсумки дії закону про локалізацію",
+})
 -->
+
+<article class="dialog-card">
+  <div class="row">
+
+    <div class="dialog-card__img-col">
+      <div class="embed-responsive embed-responsive--4-3  dialog-card__img">
+        <picture>
+          <source srcset="img/@@img.webp" media="(min-width: 1280px)" type="image/webp">
+          <source srcset="img/@@img.jpg" media="(min-width: 1280px)">
+            <!-- 588x441 -->
+          <source srcset="img/@@img.webp" media="(min-width: 1024px)" type="image/webp">
+          <source srcset="img/@@img.jpg" media="(min-width: 1024px)">
+            <!-- 1022x766 -->
+          <source srcset="img/@@img.webp" media="(min-width: 768px)" type="image/webp">
+          <source srcset="img/@@img.jpg" media="(min-width: 768px)">
+            <!-- 809x607 -->
+          <source srcset="img/@@img.webp" media="(min-width: 360px)" type="image/webp">
+          <source srcset="img/@@img.jpg" media="(min-width: 360px)">
+            <!-- 735x551 -->
+          <img src="img/@@img.jpg" width="1022" height="766" alt="Descr text" loading="lazy">
+          <!-- loading="lazy" всем кроме первого блока -->
+        </picture>
+      </div>
+    </div>
+
+    <div class="dialog-card__text-col">
+      <div class="dialog-card__text">
+        <h2 class="h2 dialog-card__title">@@title</h2>
+        <p>Локалізація у публічних закупівлях — чинна правова норма, якою учасники тендерів керуються вже як понад півроку.</p>
+        <ul>
+          <li>Які практичні можливості отримали підприємства-виробники?</li>
+          <li>Яких результатів запровадження стимулюючого інструменту досягли за цей стартовий період?</li>
+        </ul>
+        <a href="#" class="btn  btn--main"><span>Пройти опитування</span></a>
+      </div>
+    </div>
+  </div>
+</article>

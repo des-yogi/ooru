@@ -28,7 +28,67 @@
     @include col(xl, 8);
   }
 
+  &__intro {
+    border-bottom: 1px solid $main-color;
+
+    & > * {
+      max-width: 792px;
+    }
+  }
+
+  &__title {
+    text-transform: uppercase;
+    color: $main-color;
+  }
+
+  &__lead {
+    margin-top: 0;
+    margin-bottom: 24px !important;
+    font-size: $font-size-lg;
+  }
+
+  &__content {
+
+    &--members {
+      margin-top: 26px;
+    }
+
+    &--leaders {
+      position: relative;
+      padding-bottom: 40px;
+      margin-bottom: 26px;
+
+      &::after {
+        display: block;
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 12px;
+        right: 12px;
+        height: 1px;
+        background-color: $gray-2;
+      }
+
+      .col-1-2-4 {
+        margin-top: 40px;
+      }
+    }
+
+    &--other {
+
+      .col-1-2-4 {
+        margin-top: 24px;
+      }
+    }
+  }
+
   &__docs {
     margin-top: 40px;
+  }
+
+  &__member-col {
+    @include col(xs, 12);
+    @include col(lg, 6);
+    margin-top: 24px;
   }
 }

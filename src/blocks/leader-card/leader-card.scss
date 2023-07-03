@@ -1,9 +1,49 @@
-// В этом файле должны быть стили для БЭМ-блока leader-card, его элементов, 
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .leader-card {
+  height: 100%;
 
   $block-name:                &; // #{$block-name}__element
 
+  &__img {
+
+    img {
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__text {
+    padding-top: 24px;
+  }
+
+  &__title {
+    margin: 0 0 8px;
+  }
+
+  &__position {
+    margin: 8px 0 0;
+    font-size: $font-size-sm;
+
+    &--main {
+      font-weight: 500;
+      color: $main-color;
+    }
+  }
+
+  &--other {
+
+    #{$block-name}__text {
+      height: 100%;
+      padding: 24px;
+      background-color: $block-bg;
+      background-repeat: repeat-x;
+      background-position: center top;
+      background-size: 303px 99px;
+      background-image: url(../img/top-horiz.png);
+      border-radius: $border-radius;
+    }
+
+    #{$block-name}__img {
+      display: none;
+    }
+  }
 }

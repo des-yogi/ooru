@@ -99,7 +99,26 @@
 
   </div>
 
-
+  <div class="container  offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+    <div class="offcanvas-header" style="padding: 24px 0 10px;">
+      <h5 class="offcanvas-title visually-hidden" id="offcanvasTopLabel" style="margin-top:0;">
+        Пошук по сайту
+      </h5>
+      <button type="button" class="btn  btn--icon" data-bs-dismiss="offcanvas" aria-label="Close" style="margin-left: auto;">
+        <svg width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#close"></use></svg>
+      </button>
+    </div>
+    <div class="offcanvas-body" style="padding: 0 0 24px;">
+      <form id="searchForm" class="form" action="" method="post">
+        <label class="field-text" style="margin-bottom:0;">
+          <span class="field-text__input-wrap">
+            <input class="field-text__input" type="text" name="search" value="" placeholder="Пошук…">
+            <span class="field-text__help-text"></span>
+          </span>
+        </label>
+      </form>
+    </div>
+  </div>
 
   <!-- Fancybox -->
   <!-- <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script> -->

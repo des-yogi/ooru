@@ -1,9 +1,62 @@
-// В этом файле должны быть стили для БЭМ-блока dialog-card, его элементов, 
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .dialog-card {
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid $gray-2;
 
   $block-name:                &; // #{$block-name}__element
 
+  &:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border: none;
+  }
+
+  &:nth-child(even) {
+
+    #{$block-name}__text-col {
+      @include col-offset(xl, 0);
+    }
+
+    #{$block-name}__img-col {
+      order: 1;
+      @include col-offset(xl, 1);
+    }
+  }
+
+  &__img-col,
+  &__text-col {
+    @include col(xs, 12);
+    @include col(md, 10);
+    display: flex;
+    align-items: center;
+  }
+
+  &__img-col {
+    @include col(xl, 6);
+  }
+
+  &__text-col {
+    @include col-offset(xl, 1);
+    @include col(xl, 5);
+  }
+
+  &__img {
+    border-radius: $border-radius;
+
+    img {
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__text {
+
+    .btn {
+      margin-top: 8px;
+    }
+  }
+
+  &__title {
+    margin-top: 0;
+  }
 }
