@@ -1,3 +1,22 @@
 # ООРУ
 
 * https://des-yogi.github.io/ooru/
+* https://des-yogi.github.io/ooru/about
+* https://des-yogi.github.io/ooru/about-leaders
+* https://des-yogi.github.io/ooru/about-members
+* https://des-yogi.github.io/ooru/contacts
+* https://des-yogi.github.io/ooru/event-page
+* https://des-yogi.github.io/ooru/membership
+* https://des-yogi.github.io/ooru/news
+* https://des-yogi.github.io/ooru/poll
+* https://des-yogi.github.io/ooru/projects
+* https://des-yogi.github.io/ooru/project-index
+* https://des-yogi.github.io/ooru/project-about
+* https://des-yogi.github.io/ooru/project-docs
+* https://des-yogi.github.io/ooru/project-gallery
+* https://des-yogi.github.io/ooru/project-news
+* https://des-yogi.github.io/ooru/project-video
+* https://des-yogi.github.io/ooru/video
+* https://des-yogi.github.io/ooru/text-page
+* https://des-yogi.github.io/ooru/search-result
+* https://des-yogi.github.io/ooru/page-404
